@@ -12,13 +12,13 @@
 <div id="container" class="hidden">
   <div class="w-full flex items-center py-3 phone:py-0">
     <div class="w-full flex flex-col phone:flex-row gap-y-3 gap-x-5 justify-end">
-      <button class="font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/'">HOME</button>
-      <button class="hidden phone:block font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
+      <button class="font-montserrat text-phone phone:text-base font-bold bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/'">HOME</button>
+      <button class="hidden phone:block font-montserrat text-phone font-bold phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
     </div>
     <div class="phone:hidden w-full flex justify-center">
-      <button class="font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
+      <button class="font-montserrat text-phone phone:text-base font-bold bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
     </div>
-    <h1 class="hidden phone:block w-full text-3xl phone:text-4xl font-kronaOne text-surealisme text-center"><span class="text-5xl phone:text-8xl">S</span>UREALISME</h1>
+    <h1 class="hidden phone:block w-full text-3xl phone:text-5xl font-montserrat font-extrabold text-surealisme text-center"><span class="text-5xl phone:text-8xl">S</span>UREALISME</h1>
     <div class="w-full flex justify-end phone:justify-start">
       <input id="playButton" type="hidden" value="PLAY" onclick="play()">
       <input id="pauseButton" type="hidden" value="PAUSE" onclick="pause()">
@@ -31,7 +31,7 @@
   </div>
   
   <div>
-    <h1 class="phone:hidden w-full text-2xl font-kronaOne text-surealisme text-center"><span class="text-5xl">S</span>UREALISME</h1>
+    <h1 class="phone:hidden w-full text-2xl font-montserrat text-surealisme font-extrabold text-center"><span class="text-5xl">S</span>UREALISME</h1>
   </div>
   
   <img src="{{ asset('assets/pecahan/ellipse1.png') }}" alt="" class="hidden phone:block absolute top-0 left-0 -z-20" draggable="false">
@@ -102,7 +102,7 @@
   <div id="tab-open" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-black px-10 h-[280px] font-manuale text-start text-lg">
+        <div class="overflow-y-auto text-black px-10 h-[280px] font-lexend text-start text-lg">
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Surealisme itu bagaikan pikiran-pikiran SpongeBob yang melompat-lompat! Mereka suka <span class="text-mainHeader text-xl font-extrabold">mengeksplorasi dunia khayalan dan mimpi-mimpi yang aneh</span>. Lukisan-lukisan mereka seringkali penuh dengan gambar-gambar yang tidak masuk akal, tapi seru banget dilihat!</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Mereka suka menggabungkan hal-hal yang tidak biasa menjadi satu! Surealisme sering <span class="text-mainHeader text-xl font-extrabold">menampilkan objek-objek yang tidak biasa</span>, seperti jam yang meleleh atau kepala manusia yang berbentuk seperti apel. Semuanya campur aduk tapi seru!</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Surealisme itu seperti bercandaan SpongeBob yang agak aneh tapi bikin ketawa! Mereka suka menghadirkan <span class="text-mainHeader text-xl font-extrabold">karya-karya yang aneh tapi menyenangkan</span>, seperti memperbesar objek-objek kecil atau menyajikan suasana yang konyol.</p><br>
@@ -124,7 +124,7 @@
   <div id="tab-open2" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[420px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-10 h-[300px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-10 h-[300px] font-lexend text-center text-lg">
           <div class="container mx-auto my-8">
             <video id="customVideo" class="w-full h-52">
               <source src="{{ asset('assets/videos/surealisme.mp4') }}" type="video/mp4">
@@ -144,7 +144,7 @@
   <div id="tab-open3" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-16 h-[280px] font-manuale text-center text-lg flex flex-col gap-y-10">
+        <div class="overflow-y-auto text-white px-16 h-[280px] font-lexend text-center text-lg flex flex-col gap-y-10">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/surealisme/surealisme-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -187,7 +187,7 @@
   <div id="tab-open4" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-16 h-[280px] font-manuale text-center text-lg flex flex-col gap-y-10">
+        <div class="overflow-y-auto text-white px-16 h-[280px] font-lexend text-center text-lg flex flex-col gap-y-10">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/surealisme/surealisme2-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -229,7 +229,7 @@
   </div>
   <div id="tab-open5" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
-      <div class="bg-bgNavbar/70 w-[800px] h-[200px] flex flex-col gap-y-5 items-center justify-center font-manuale text-xl text-white">
+      <div class="bg-bgNavbar/70 w-[800px] h-[200px] flex flex-col gap-y-5 items-center justify-center font-lexend text-xl text-white">
         <p><span class="text-2xl font-bold">Awal</span> pergerakan: 1924</p>
         <p><span class="text-2xl font-bold">Akhir</span> pergerakan: 1966</p>
       </div>
@@ -238,7 +238,7 @@
   <div id="tab-open6" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex items-center justify-center">
-        <div class="overflow-y-auto text-white px-10 h-[280px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-10 h-[280px] font-lexend text-center text-lg">
           <p>Pengaruh dari gerakan Surealisme itu bisa dibilang juga yang bikin munculnya gerakan Abstrak Ekspresionisme, loh. Nah, tahun 1936, ada nih Museum Seni Modern di New York yang bikin pameran keren banget dengan tema Seni Fantastis, Dada, Surealisme, gitu. Nah, para seniman Amerika yang dateng ke pameran itu pada terpesona banget sama apa yang mereka liat.</p> <br>
   
           <p>Ada beberapa seniman, kayak Jackson Pollock, yang mulai coba-coba dengan otomatisme, gitu, dan coba menggambar citra-citra yang kayaknya dateng dari alam bawah sadar mereka sendiri, tau. Terus, hasil eksperimen mereka ini malah jadi ngebuat karya-karya lukisan yang ikonik, kayak karya "tetesan" miliknya Pollock. Terus, ada juga seniman lain, kayak Robert Motherwell, yang katanya udah "terjebak di antara dua dunia" antara abstraksi dan otomatisme.</p> <br>
@@ -252,7 +252,7 @@
   <div id="tab-open-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-black px-5 h-[400px] font-manuale text-start text-lg">
+        <div class="overflow-y-auto text-black px-5 h-[400px] font-lexend text-start text-lg">
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Surealisme itu bagaikan pikiran-pikiran SpongeBob yang melompat-lompat! Mereka suka <span class="text-mainHeader text-xl font-extrabold">mengeksplorasi dunia khayalan dan mimpi-mimpi yang aneh</span>. Lukisan-lukisan mereka seringkali penuh dengan gambar-gambar yang tidak masuk akal, tapi seru banget dilihat!</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Mereka suka menggabungkan hal-hal yang tidak biasa menjadi satu! Surealisme sering <span class="text-mainHeader text-xl font-extrabold">menampilkan objek-objek yang tidak biasa</span>, seperti jam yang meleleh atau kepala manusia yang berbentuk seperti apel. Semuanya campur aduk tapi seru!</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Surealisme itu seperti bercandaan SpongeBob yang agak aneh tapi bikin ketawa! Mereka suka menghadirkan <span class="text-mainHeader text-xl font-extrabold">karya-karya yang aneh tapi menyenangkan</span>, seperti memperbesar objek-objek kecil atau menyajikan suasana yang konyol.</p><br>
@@ -274,7 +274,7 @@
   <div id="tab-open2-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg">
           <div class="container mx-auto my-8">
             <video id="customVideo-m" class="w-full h-52">
               <source src="{{ asset('assets/videos/surealisme.mp4') }}" type="video/mp4">
@@ -294,7 +294,7 @@
   <div id="tab-open3-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70  w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg flex flex-col gap-y-5">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg flex flex-col gap-y-5">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/surealisme/surealisme-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -337,7 +337,7 @@
   <div id="tab-open4-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg flex flex-col gap-y-5">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg flex flex-col gap-y-5">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/surealisme/surealisme2-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -379,7 +379,7 @@
   </div>
   <div id="tab-open5-m" class="z-20 fixed hidden bottom-0 right-0 left-0">
     <div class="flex items-center justify-center w-full h-full bg-bgNavbar/70">
-      <div class="w-full h-[300px] flex flex-col gap-y-5 items-center justify-center font-manuale text-xl text-white">
+      <div class="w-full h-[300px] flex flex-col gap-y-5 items-center justify-center font-lexend text-xl text-white">
         <h2 class=""><span class="text-2xl font-bold">Awal</span> pergerakan: 1924</h2>
         <h2 class=""><span class="text-2xl font-bold">Akhir</span> pergerakan: 1966</h2>
       </div>
@@ -388,7 +388,7 @@
   <div id="tab-open6-m" class="z-20 fixed hidden bottom-0 right-0 left-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg">
           <p>Pengaruh dari gerakan Surealisme itu bisa dibilang juga yang bikin munculnya gerakan Abstrak Ekspresionisme, loh. Nah, tahun 1936, ada nih Museum Seni Modern di New York yang bikin pameran keren banget dengan tema Seni Fantastis, Dada, Surealisme, gitu. Nah, para seniman Amerika yang dateng ke pameran itu pada terpesona banget sama apa yang mereka liat.</p> <br>
   
           <p>Ada beberapa seniman, kayak Jackson Pollock, yang mulai coba-coba dengan otomatisme, gitu, dan coba menggambar citra-citra yang kayaknya dateng dari alam bawah sadar mereka sendiri, tau. Terus, hasil eksperimen mereka ini malah jadi ngebuat karya-karya lukisan yang ikonik, kayak karya "tetesan" miliknya Pollock. Terus, ada juga seniman lain, kayak Robert Motherwell, yang katanya udah "terjebak di antara dua dunia" antara abstraksi dan otomatisme.</p> <br>

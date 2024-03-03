@@ -12,13 +12,13 @@
 <div id="container" class="hidden">
   <div class="w-full flex items-center py-3 phone:py-0">
     <div class="w-full flex flex-col phone:flex-row gap-y-3 gap-x-5 justify-end">
-      <button class="font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/'">HOME</button>
-      <button class="hidden phone:block font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
+      <button class="font-montserrat text-phone phone:text-base font-bold bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/'">HOME</button>
+      <button class="hidden phone:block font-montserrat text-phone phone:text-base font-bold bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
     </div>
     <div class="phone:hidden w-full flex justify-center">
-      <button class="font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
+      <button class="font-montserrat text-phone phone:text-base bg-senimanBg font-bold p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
     </div>
-    <h1 class="hidden phone:block w-full text-3xl phone:text-4xl font-kronaOne text-neoklasik text-center"><span class="text-5xl phone:text-8xl">N</span>EO KLASIK</h1>
+    <h1 class="hidden phone:block w-full text-3xl phone:text-5xl font-montserrat font-extrabold text-neoklasik text-center"><span class="text-5xl phone:text-8xl">N</span>EO KLASIK</h1>
     <div class="w-full flex justify-end phone:justify-start">
       <input id="playButton" type="hidden" value="PLAY" onclick="play()">
       <input id="pauseButton" type="hidden" value="PAUSE" onclick="pause()">
@@ -31,7 +31,7 @@
   </div>
   
   <div>
-    <h1 class="phone:hidden w-full text-3xl font-kronaOne text-neoklasik text-center"><span class="text-5xl">N</span>EO KLASIK</h1>
+    <h1 class="phone:hidden w-full text-3xl font-montserrat font-extrabold text-neoklasik text-center"><span class="text-5xl">N</span>EO KLASIK</h1>
   </div>
   
   <img src="{{ asset('assets/pecahan/ellipse1.png') }}" alt="" class="hidden phone:block absolute top-0 left-0 -z-20" draggable="false">
@@ -102,7 +102,7 @@
   <div id="tab-open" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-black px-10 h-[280px] font-manuale text-start text-lg">
+        <div class="overflow-y-auto text-black px-10 h-[280px] font-lexend text-start text-lg">
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Neoklasik itu seperti memutar kembali jam ke zaman kuno! Mereka suka mengadopsi gaya, tema, dan ide dari <span class="text-mainHeader text-xl font-extrabold">periode klasik Yunani dan Romawi</span>. Jadi, bayangkan patung dan lukisan yang menampilkan dewa-dewi, pahlawan, atau adegan mitologis yang diilhami dari masa lalu.</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Neoklasik itu <span class="text-mainHeader text-xl font-extrabold">sederhana dan simetris</span>. Mereka suka menggunakan garis lurus dan bentuk sederhana. Bayangkan patung-patung dengan proporsi yang sempurna dan lukisan-lukisan dengan komposisi yang sangat seimbang. Semua terasa begitu rapi dan teratur!</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Neoklasik suka <span class="text-mainHeader text-xl font-extrabold">warna-warna yang tenang dan damai</span>. Bayangkan lukisan dengan palet warna netral seperti putih, krem, biru langit, atau hijau daun. Ini memberi kesan elegan dan santai sekaligus.</p><br>
@@ -123,7 +123,7 @@
   <div id="tab-open2" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[420px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-10 h-[300px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-10 h-[300px] font-lexend text-center text-lg">
           <div class="container mx-auto my-8">
             <video id="customVideo" class="w-full h-52">
               <source src="{{ asset('assets/videos/neoklasik.mp4') }}" type="video/mp4">
@@ -143,7 +143,7 @@
   <div id="tab-open3" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-16 h-[280px] font-manuale text-center text-lg flex flex-col gap-y-10">
+        <div class="overflow-y-auto text-white px-16 h-[280px] font-lexend text-center text-lg flex flex-col gap-y-10">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/neoklasik/neoklasik-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -186,7 +186,7 @@
   <div id="tab-open4" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-16 h-[280px] font-manuale text-center text-lg flex flex-col gap-y-10">
+        <div class="overflow-y-auto text-white px-16 h-[280px] font-lexend text-center text-lg flex flex-col gap-y-10">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/neoklasik/neoklasik2-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -228,7 +228,7 @@
   </div>
   <div id="tab-open5" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
-      <div class="bg-bgNavbar/70 w-[800px] h-[200px] flex flex-col gap-y-5 items-center justify-center font-manuale text-xl text-white">
+      <div class="bg-bgNavbar/70 w-[800px] h-[200px] flex flex-col gap-y-5 items-center justify-center font-lexend text-xl text-white">
         <p><span class="text-2xl font-bold">Awal</span> pergerakan: 1750</p>
         <p><span class="text-2xl font-bold">Akhir</span> pergerakan: 1850</p>
       </div>
@@ -237,7 +237,7 @@
   <div id="tab-open6" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex items-center justify-center">
-        <div class="overflow-y-auto text-white px-10 h-[280px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-10 h-[280px] font-lexend text-center text-lg">
           <p>Pada tahun 1800-an awal, Neoklasikisme dalam seni lukis dan patung mulai meredup, apalagi seiring dengan munculnya Romantisisme. Kedua gaya seni ini bersaing, dimana Ingres mewakili Neoklasikisme yang dianggap "tradisional", sementara Delacroix dengan paham Romantisme menekankan ekspresi kepekaan dan perasaan individu. Beberapa seniman akademis masih menerapkan gaya dan objek klasik, tetapi disaat yang bersamaan, beberapa gerakan seniman modern menentang dan akhirnya gerakan Neoklasik berakhir pada tahun 1850-an. Gerakan seni modern tersebut di antaranya, Realisme, Naturalisme, dan Impresionisme.</p>
         </div>
       </div>
@@ -247,7 +247,7 @@
   <div id="tab-open-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-black px-5 h-[400px] font-manuale text-start text-lg">
+        <div class="overflow-y-auto text-black px-5 h-[400px] font-lexend text-start text-lg">
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Neoklasik itu seperti memutar kembali jam ke zaman kuno! Mereka suka mengadopsi gaya, tema, dan ide dari <span class="text-mainHeader text-xl font-extrabold">periode klasik Yunani dan Romawi</span>. Jadi, bayangkan patung dan lukisan yang menampilkan dewa-dewi, pahlawan, atau adegan mitologis yang diilhami dari masa lalu.</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Neoklasik itu <span class="text-mainHeader text-xl font-extrabold">sederhana dan simetris</span>. Mereka suka menggunakan garis lurus dan bentuk sederhana. Bayangkan patung-patung dengan proporsi yang sempurna dan lukisan-lukisan dengan komposisi yang sangat seimbang. Semua terasa begitu rapi dan teratur!</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Neoklasik suka <span class="text-mainHeader text-xl font-extrabold">warna-warna yang tenang dan damai</span>. Bayangkan lukisan dengan palet warna netral seperti putih, krem, biru langit, atau hijau daun. Ini memberi kesan elegan dan santai sekaligus.</p><br>
@@ -268,7 +268,7 @@
   <div id="tab-open2-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg">
           <div class="container mx-auto my-8">
             <video id="customVideo-m" class="w-full h-52">
               <source src="{{ asset('assets/videos/neoklasik.mp4') }}" type="video/mp4">
@@ -288,7 +288,7 @@
   <div id="tab-open3-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70  w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg flex flex-col gap-y-5">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg flex flex-col gap-y-5">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/neoklasik/neoklasik-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -331,7 +331,7 @@
   <div id="tab-open4-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg flex flex-col gap-y-5">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg flex flex-col gap-y-5">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/neoklasik/neoklasik2-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -373,7 +373,7 @@
   </div>
   <div id="tab-open5-m" class="z-20 fixed hidden bottom-0 right-0 left-0">
     <div class="flex items-center justify-center w-full h-full bg-bgNavbar/70">
-      <div class="w-full h-[300px] flex flex-col gap-y-5 items-center justify-center font-manuale text-xl text-white">
+      <div class="w-full h-[300px] flex flex-col gap-y-5 items-center justify-center font-lexend text-xl text-white">
         <h2 class=""><span class="text-2xl font-bold">Awal</span> pergerakan: 1750</h2>
         <h2 class=""><span class="text-2xl font-bold">Akhir</span> pergerakan: 1850</h2>
       </div>
@@ -382,7 +382,7 @@
   <div id="tab-open6-m" class="z-20 fixed hidden bottom-0 right-0 left-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg">
           <p>Pada tahun 1800-an awal, Neoklasikisme dalam seni lukis dan patung mulai meredup, apalagi seiring dengan munculnya Romantisisme. Kedua gaya seni ini bersaing, dimana Ingres mewakili Neoklasikisme yang dianggap "tradisional", sementara Delacroix dengan paham Romantisme menekankan ekspresi kepekaan dan perasaan individu. Beberapa seniman akademis masih menerapkan gaya dan objek klasik, tetapi disaat yang bersamaan, beberapa gerakan seniman modern menentang dan akhirnya gerakan Neoklasik berakhir pada tahun 1850-an. Gerakan seni modern tersebut di antaranya, Realisme, Naturalisme, dan Impresionisme.</p>
         </div>
       </div>

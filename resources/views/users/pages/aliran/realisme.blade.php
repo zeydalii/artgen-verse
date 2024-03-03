@@ -12,13 +12,13 @@
 <div id="container" class="hidden">
   <div class="w-full flex items-center py-3 phone:py-0">
     <div class="w-full flex flex-col phone:flex-row gap-y-3 gap-x-5 justify-end">
-      <button class="font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/'">HOME</button>
-      <button class="hidden phone:block font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
+      <button class="font-montserrat text-phone phone:text-base font-bold bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/'">HOME</button>
+      <button class="hidden phone:block font-montserrat text-phone phone:text-base font-bold bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
     </div>
     <div class="phone:hidden w-full flex justify-center">
-      <button class="font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
+      <button class="font-montserrat text-phone phone:text-base bg-senimanBg font-bold p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
     </div>
-    <h1 class="hidden phone:block w-full text-3xl phone:text-4xl font-kronaOne text-realisme text-center"><span class="text-5xl phone:text-8xl">R</span>EALISME</h1>
+    <h1 class="hidden phone:block w-full text-3xl phone:text-5xl font-montserrat text-realisme font-extrabold text-center"><span class="text-5xl phone:text-8xl">R</span>EALISME</h1>
     <div class="w-full flex justify-end phone:justify-start">
       <input id="playButton" type="hidden" value="PLAY" onclick="play()">
       <input id="pauseButton" type="hidden" value="PAUSE" onclick="pause()">
@@ -31,7 +31,7 @@
   </div>
   
   <div>
-    <h1 class="phone:hidden w-full text-3xl font-kronaOne text-realisme text-center"><span class="text-5xl">R</span>EALISME</h1>
+    <h1 class="phone:hidden w-full text-3xl font-montserrat text-realisme font-extrabold text-center"><span class="text-5xl">R</span>EALISME</h1>
   </div>
   
   <img src="{{ asset('assets/pecahan/ellipse1.png') }}" alt="" class="hidden phone:block absolute top-0 left-0 -z-20" draggable="false">
@@ -102,7 +102,7 @@
   <div id="tab-open" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-black px-10 h-[280px] font-manuale text-start text-lg">
+        <div class="overflow-y-auto text-black px-10 h-[280px] font-lexend text-start text-lg">
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Realisme itu seperti teman yang selalu jujur! Mereka suka <span class="text-mainHeader text-xl font-extrabold">menggambarkan dunia dengan cara yang sesungguhnya</span>, tanpa menambah-nambahi atau mengubah-ubah. Lukisan-lukisan mereka seperti jendela yang membuka pandangan langsung ke dunia nyata.</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Mereka adalah detektif detail yang ulung! Realisme suka <span class="text-mainHeader text-xl font-extrabold">menangkap setiap rincian kehidupan sehari-hari dengan sangat teliti</span>. Jadi, bayangkan lukisan-lukisan yang memperlihatkan setiap lipatan pakaian, setiap ekspresi wajah, dan bahkan debu-debu kecil di sudut ruangan.</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Realisme suka <span class="text-mainHeader text-xl font-extrabold">menceritakan kisah-kisah kehidupan sehari-hari</span> yang biasa tapi luar biasa! Mereka mengangkat tema-tema seperti pekerjaan, keluarga, dan interaksi manusia lainnya. Jadi, ketika Anda melihat karya seni realisme, Anda mungkin merasa seperti sedang mengintip kehidupan orang lain!</p><br>
@@ -124,7 +124,7 @@
   <div id="tab-open2" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[420px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-10 h-[300px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-10 h-[300px] font-lexend text-center text-lg">
           <div class="container mx-auto my-8">
             <video id="customVideo" class="w-full h-52">
               <source src="{{ asset('assets/videos/realisme.mp4') }}" type="video/mp4">
@@ -144,7 +144,7 @@
   <div id="tab-open3" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-16 h-[280px] font-manuale text-center text-lg flex flex-col gap-y-10">
+        <div class="overflow-y-auto text-white px-16 h-[280px] font-lexend text-center text-lg flex flex-col gap-y-10">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/realisme/realisme-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -187,7 +187,7 @@
   <div id="tab-open4" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-16 h-[280px] font-manuale text-center text-lg flex flex-col gap-y-10">
+        <div class="overflow-y-auto text-white px-16 h-[280px] font-lexend text-center text-lg flex flex-col gap-y-10">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/realisme/realisme2-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -229,7 +229,7 @@
   </div>
   <div id="tab-open5" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
-      <div class="bg-bgNavbar/70 w-[800px] h-[200px] flex flex-col gap-y-5 items-center justify-center font-manuale text-xl text-white">
+      <div class="bg-bgNavbar/70 w-[800px] h-[200px] flex flex-col gap-y-5 items-center justify-center font-lexend text-xl text-white">
         <p><span class="text-2xl font-bold">Awal</span> pergerakan: 1840-an</p>
         <p><span class="text-2xl font-bold">Akhir</span> pergerakan: 1880-an</p>
       </div>
@@ -238,7 +238,7 @@
   <div id="tab-open6" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex items-center justify-center">
-        <div class="overflow-y-auto text-white px-10 h-[280px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-10 h-[280px] font-lexend text-center text-lg">
           <p>Jadi ceritanya pengaruh Realisme modern itu sampe sekarang masih kerasa banget dalam sejarah seni rupa, dan langsung ngaruh juga ke munculnya Impresionisme. Nah, selain itu, gaya seni modern keren kayak fotorealisme dan hiperrealisme juga kebawa sama gerakan Realisme. Ada sub-genre ini yang nunjukin betapa tajamnya realisme yang ada sekarang ini langsung mempengaruhi mereka, dan juga nunjukin warisan revolusioner dari gerakan ini bakal ngaruhin terus, lo!</p><br>
   
           <p>Terus, gerakan seni berikutnya, kayak Surealisme dan Neo-Realisme, tuh mewarisi dasar-dasar filosofi Realisme seiring dengan perubahan dunia modern. Di tengah gejolak Perang Dunia II dan sesudahnya, gerakan seni ini lebih ke arah ngeluarin seni yang lebih ke fantasi, impian, atau dunia imajinatif, gitu. Jadi, maksudnya, seniman pada masa itu lebih cenderung buat karya yang bener-bener lepas dari realitas sehari-hari, bukan cuma gambarin realitas yang ada di sekitar mereka. Mereka nggak cuma gambarin hidup sehari-hari aja, tapi mereka juga ngeliat dunia dari sudut pandang alternatif. Banyak dari mereka yang pengen ngerti lebih dalam tentang perasaan manusia dengan menjelajahi berbagai tingkatan kesadaran lewat karya seni mereka.</p>
@@ -250,7 +250,7 @@
   <div id="tab-open-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-black px-5 h-[400px] font-manuale text-start text-lg">
+        <div class="overflow-y-auto text-black px-5 h-[400px] font-lexend text-start text-lg">
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Realisme itu seperti teman yang selalu jujur! Mereka suka <span class="text-mainHeader text-xl font-extrabold">menggambarkan dunia dengan cara yang sesungguhnya</span>, tanpa menambah-nambahi atau mengubah-ubah. Lukisan-lukisan mereka seperti jendela yang membuka pandangan langsung ke dunia nyata.</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Mereka adalah detektif detail yang ulung! Realisme suka <span class="text-mainHeader text-xl font-extrabold">menangkap setiap rincian kehidupan sehari-hari dengan sangat teliti</span>. Jadi, bayangkan lukisan-lukisan yang memperlihatkan setiap lipatan pakaian, setiap ekspresi wajah, dan bahkan debu-debu kecil di sudut ruangan.</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Realisme suka <span class="text-mainHeader text-xl font-extrabold">menceritakan kisah-kisah kehidupan sehari-hari</span> yang biasa tapi luar biasa! Mereka mengangkat tema-tema seperti pekerjaan, keluarga, dan interaksi manusia lainnya. Jadi, ketika Anda melihat karya seni realisme, Anda mungkin merasa seperti sedang mengintip kehidupan orang lain!</p><br>
@@ -272,7 +272,7 @@
   <div id="tab-open2-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg">
           <div class="container mx-auto my-8">
             <video id="customVideo-m" class="w-full h-52">
               <source src="{{ asset('assets/videos/realisme.mp4') }}" type="video/mp4">
@@ -292,7 +292,7 @@
   <div id="tab-open3-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70  w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg flex flex-col gap-y-5">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg flex flex-col gap-y-5">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/realisme/realisme-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -335,7 +335,7 @@
   <div id="tab-open4-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg flex flex-col gap-y-5">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg flex flex-col gap-y-5">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/realisme/realisme2-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -377,7 +377,7 @@
   </div>
   <div id="tab-open5-m" class="z-20 fixed hidden bottom-0 right-0 left-0">
     <div class="flex items-center justify-center w-full h-full bg-bgNavbar/70">
-      <div class="w-full h-[300px] flex flex-col gap-y-5 items-center justify-center font-manuale text-xl text-white">
+      <div class="w-full h-[300px] flex flex-col gap-y-5 items-center justify-center font-lexend text-xl text-white">
         <h2 class=""><span class="text-2xl font-bold">Awal</span> pergerakan: 1840-an</h2>
         <h2 class=""><span class="text-2xl font-bold">Akhir</span> pergerakan: 1880-an</h2>
       </div>
@@ -386,7 +386,7 @@
   <div id="tab-open6-m" class="z-20 fixed hidden bottom-0 right-0 left-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg">
           <p>Jadi ceritanya pengaruh Realisme modern itu sampe sekarang masih kerasa banget dalam sejarah seni rupa, dan langsung ngaruh juga ke munculnya Impresionisme. Nah, selain itu, gaya seni modern keren kayak fotorealisme dan hiperrealisme juga kebawa sama gerakan Realisme. Ada sub-genre ini yang nunjukin betapa tajamnya realisme yang ada sekarang ini langsung mempengaruhi mereka, dan juga nunjukin warisan revolusioner dari gerakan ini bakal ngaruhin terus, lo!</p><br>
   
           <p>Terus, gerakan seni berikutnya, kayak Surealisme dan Neo-Realisme, tuh mewarisi dasar-dasar filosofi Realisme seiring dengan perubahan dunia modern. Di tengah gejolak Perang Dunia II dan sesudahnya, gerakan seni ini lebih ke arah ngeluarin seni yang lebih ke fantasi, impian, atau dunia imajinatif, gitu. Jadi, maksudnya, seniman pada masa itu lebih cenderung buat karya yang bener-bener lepas dari realitas sehari-hari, bukan cuma gambarin realitas yang ada di sekitar mereka. Mereka nggak cuma gambarin hidup sehari-hari aja, tapi mereka juga ngeliat dunia dari sudut pandang alternatif. Banyak dari mereka yang pengen ngerti lebih dalam tentang perasaan manusia dengan menjelajahi berbagai tingkatan kesadaran lewat karya seni mereka.</p>

@@ -12,15 +12,15 @@
 <div id="container" class="hidden">
   <div class="w-full flex items-center py-3 phone:py-0">
     <div class="w-full flex flex-col phone:flex-row gap-y-3 gap-x-5 justify-end">
-      <button class="font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/'">HOME</button>
-      <button class="hidden phone:block font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
+      <button class="font-montserrat text-phone phone:text-base font-bold bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/'">HOME</button>
+      <button class="hidden phone:block font-montserrat text-phone font-bold phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
     </div>
     <div class="phone:hidden w-full flex justify-center">
-      <button class="font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
+      <button class="font-montserrat text-phone phone:text-base font-bold bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
     </div>
-    <div class="font-kronaOne w-full">
-      <h1 class="hidden phone:block text-4xl text-[#977E2B] text-center">A<span class="text-[#F1802F]">B</span><span class="text-[#09001E]">S</span><span class="text-[#C9C9C8]">T</span><span class="text-[#79952C]">R</span><span class="text-[#666563]">A</span><span class="text-[#542C93]">K</span></h1>
-      <h1 class="hidden phone:block text-3xl text-surealisme text-center">EKSPRESIONISME</h1>
+    <div class="font-montserrat phone:w-full">
+      <h1 class="hidden phone:block text-5xl font-extrabold text-[#977E2B] text-center">A<span class="text-[#F1802F]">B</span><span class="text-[#09001E]">S</span><span class="text-[#C9C9C8]">T</span><span class="text-[#79952C]">R</span><span class="text-[#666563]">A</span><span class="text-[#542C93]">K</span></h1>
+      <h1 class="hidden phone:block text-4xl font-extrabold text-surealisme text-center">EKSPRESIONISME</h1>
     </div>
     <div class="w-full flex justify-end phone:justify-start">
       <input id="playButton" type="hidden" value="PLAY" onclick="play()">
@@ -33,9 +33,9 @@
     </div>
   </div>
   
-  <div class="font-kronaOne phone:hidden">
-    <h1 class="w-full text-2xl text-[#977E2B] text-center">A<span class="text-[#F1802F]">B</span><span class="text-[#09001E]">S</span><span class="text-[#C9C9C8]">T</span><span class="text-[#79952C]">R</span><span class="text-[#666563]">A</span><span class="text-[#542C93]">K</span></h1>
-    <h1 class="text-xl text-surealisme text-center">EKSPRESIONISME</h1>
+  <div class="font-montserrat phone:hidden">
+    <h1 class="w-full text-2xl text-[#977E2B] font-extrabold text-center">A<span class="text-[#F1802F]">B</span><span class="text-[#09001E]">S</span><span class="text-[#C9C9C8]">T</span><span class="text-[#79952C]">R</span><span class="text-[#666563]">A</span><span class="text-[#542C93]">K</span></h1>
+    <h1 class="text-xl text-surealisme text-center font-extrabold">EKSPRESIONISME</h1>
   </div>
   
   <img src="{{ asset('assets/pecahan/ellipse1.png') }}" alt="" class="hidden phone:block absolute top-0 left-0 -z-20" draggable="false">
@@ -110,7 +110,7 @@
   <div id="tab-open" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-black px-10 h-[280px] font-manuale text-start text-lg">
+        <div class="overflow-y-auto text-black px-10 h-[280px] font-lexend text-start text-lg">
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Seni abstrak ekspresionisme itu layaknya sebuah ledakan warna yang menggelitik imajinasi kita! Mereka suka <span class="text-mainHeader text-xl font-extrabold">menggunakan warna-warna yang mencolok dan berani</span> yang bikin kita terpana.</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Mereka suka membuat <span class="text-mainHeader text-xl font-extrabold">bentuk-bentuk yang aneh</span> dan melambai-lambai seperti angin yang berhembus! Seni abstrak ekspresionisme penuh dengan <span class="text-mainHeader text-xl font-extrabold">garis-garis dan bentuk-bentuk yang bergerak bebas</span>, mengajak kita ke dalam dunia yang ajaib.</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Mereka lebih fokus pada <span class="text-mainHeader text-xl font-extrabold">penggunaan cat yang spontan dan tak terduga</span> dalam seni yang melibatkan improvisasi psikologis, dengan tujuan untuk mengekspresikan pikiran bawah sadar secara kreatif.</p><br>
@@ -131,7 +131,7 @@
   <div id="tab-open2" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[420px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-10 h-[300px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-10 h-[300px] font-lexend text-center text-lg">
           <div class="container mx-auto my-8">
             <video id="customVideo" class="w-full h-52">
               <source src="{{ asset('assets/videos/abstrak.mp4') }}" type="video/mp4">
@@ -153,7 +153,7 @@
   <div id="tab-open3" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-16 h-[280px] font-manuale text-center text-lg flex flex-col gap-y-10">
+        <div class="overflow-y-auto text-white px-16 h-[280px] font-lexend text-center text-lg flex flex-col gap-y-10">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/abstrak/abstrak-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -196,7 +196,7 @@
   <div id="tab-open4" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-16 h-[280px] font-manuale text-center text-lg flex flex-col gap-y-10">
+        <div class="overflow-y-auto text-white px-16 h-[280px] font-lexend text-center text-lg flex flex-col gap-y-10">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/abstrak/abstrak2-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -245,7 +245,7 @@
   </div>
   <div id="tab-open5" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
-      <div class="bg-bgNavbar/70 w-[800px] h-[200px] flex flex-col gap-y-5 items-center justify-center font-manuale text-xl text-white">
+      <div class="bg-bgNavbar/70 w-[800px] h-[200px] flex flex-col gap-y-5 items-center justify-center font-lexend text-xl text-white">
         <p><span class="text-2xl font-bold">Awal</span> pergerakan: 1943</p>
         <p><span class="text-2xl font-bold">Akhir</span> pergerakan: 1965</p>
       </div>
@@ -254,7 +254,7 @@
   <div id="tab-open6" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex items-center justify-center">
-        <div class="overflow-y-auto text-white px-10 h-[280px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-10 h-[280px] font-lexend text-center text-lg">
           <p>Pada akhir tahun 1950-an, Ekspresionisme Abstrak udah nggak jadi pembicaraan yang penting lagi di dunia seni, karena generasi baru udah mulai berjaya. Tapi, warisan dari gerakan ini tetep gede banget, lho. Allan Kaprow udah ngerasain hal ini dari tahun 1958, waktu dia nulis artikel untuk ART News yang judulnya "Apa sih warisan Jackson Pollock?" Nah, jawabannya tuh nggak cuma soal melukis aja, tapi pengaruh Pollock bener-bener kentara banget di bidang-bidang yang pertunjukannya punya peran penting. Dia juga berperan besar di gerakan Gutai di Jepang dan Aksionis di Wina.
           </p> <br>
   
@@ -269,7 +269,7 @@
   <div id="tab-open-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-black px-5 h-[400px] font-manuale text-start text-lg">
+        <div class="overflow-y-auto text-black px-5 h-[400px] font-lexend text-start text-lg">
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Seni abstrak ekspresionisme itu layaknya sebuah ledakan warna yang menggelitik imajinasi kita! Mereka suka <span class="text-mainHeader text-xl font-extrabold">menggunakan warna-warna yang mencolok dan berani</span> yang bikin kita terpana.</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Mereka suka membuat <span class="text-mainHeader text-xl font-extrabold">bentuk-bentuk yang aneh</span> dan melambai-lambai seperti angin yang berhembus! Seni abstrak ekspresionisme penuh dengan <span class="text-mainHeader text-xl font-extrabold">garis-garis dan bentuk-bentuk yang bergerak bebas</span>, mengajak kita ke dalam dunia yang ajaib.</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Mereka lebih fokus pada <span class="text-mainHeader text-xl font-extrabold">penggunaan cat yang spontan dan tak terduga</span> dalam seni yang melibatkan improvisasi psikologis, dengan tujuan untuk mengekspresikan pikiran bawah sadar secara kreatif.</p><br>
@@ -290,7 +290,7 @@
   <div id="tab-open2-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg">
           <div class="container mx-auto my-8">
             <video id="customVideo-m" class="w-full h-52">
               <source src="{{ asset('assets/videos/abstrak.mp4') }}" type="video/mp4">
@@ -312,7 +312,7 @@
   <div id="tab-open3-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70  w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg flex flex-col gap-y-5">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg flex flex-col gap-y-5">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/abstrak/abstrak-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -355,7 +355,7 @@
   <div id="tab-open4-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg flex flex-col gap-y-5">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg flex flex-col gap-y-5">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/abstrak/abstrak2-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -404,7 +404,7 @@
   </div>
   <div id="tab-open5-m" class="z-20 fixed hidden bottom-0 right-0 left-0">
     <div class="flex items-center justify-center w-full h-full bg-bgNavbar/70">
-      <div class="w-full h-[300px] flex flex-col gap-y-5 items-center justify-center font-manuale text-xl text-white">
+      <div class="w-full h-[300px] flex flex-col gap-y-5 items-center justify-center font-lexend text-xl text-white">
         <h2 class=""><span class="text-2xl font-bold">Awal</span> pergerakan: 1943</h2>
         <h2 class=""><span class="text-2xl font-bold">Akhir</span> pergerakan: 1965</h2>
       </div>
@@ -413,7 +413,7 @@
   <div id="tab-open6-m" class="z-20 fixed hidden bottom-0 right-0 left-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg">
           <p>Pada akhir tahun 1950-an, Ekspresionisme Abstrak udah nggak jadi pembicaraan yang penting lagi di dunia seni, karena generasi baru udah mulai berjaya. Tapi, warisan dari gerakan ini tetep gede banget, lho. Allan Kaprow udah ngerasain hal ini dari tahun 1958, waktu dia nulis artikel untuk ART News yang judulnya "Apa sih warisan Jackson Pollock?" Nah, jawabannya tuh nggak cuma soal melukis aja, tapi pengaruh Pollock bener-bener kentara banget di bidang-bidang yang pertunjukannya punya peran penting. Dia juga berperan besar di gerakan Gutai di Jepang dan Aksionis di Wina.
           </p> <br>
   

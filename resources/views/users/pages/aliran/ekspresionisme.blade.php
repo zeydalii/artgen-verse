@@ -12,13 +12,13 @@
 <div id="container" class="hidden">
   <div class="w-full flex items-center py-3 phone:py-0">
     <div class="w-full flex flex-col phone:flex-row gap-y-3 gap-x-5 justify-end">
-      <button class="font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/'">HOME</button>
-      <button class="hidden phone:block font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
+      <button class="font-montserrat text-phone phone:text-base font-bold bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/'">HOME</button>
+      <button class="hidden phone:block font-montserrat text-phone phone:text-base font-bold bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
     </div>
     <div class="phone:hidden w-full flex justify-center">
-      <button class="font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
+      <button class="font-montserrat text-phone phone:text-base bg-senimanBg font-bold p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
     </div>
-    <h1 class="hidden phone:block w-full text-3xl phone:text-4xl font-kronaOne text-ekspresionisme text-center"><span class="text-5xl phone:text-8xl">E</span>KSPRESIONISME</h1>
+    <h1 class="hidden phone:block w-full text-3xl phone:text-5xl font-montserrat text-ekspresionisme font-extrabold text-center"><span class="text-5xl phone:text-8xl">E</span>KSPRESIONISME</h1>
     <div class="w-full flex justify-end phone:justify-start">
       <input id="playButton" type="hidden" value="PLAY" onclick="play()">
       <input id="pauseButton" type="hidden" value="PAUSE" onclick="pause()">
@@ -31,7 +31,7 @@
   </div>
   
   <div>
-    <h1 class="phone:hidden w-full text-2xl font-kronaOne text-ekspresionisme text-center"><span class="text-5xl">E</span>KSPRESIONISME</h1>
+    <h1 class="phone:hidden w-full text-2xl font-montserrat text-ekspresionisme font-extrabold text-center"><span class="text-5xl">E</span>KSPRESIONISME</h1>
   </div>
   
   <img src="{{ asset('assets/pecahan/ellipse1.png') }}" alt="" class="hidden phone:block absolute top-0 left-0 -z-20" draggable="false">
@@ -102,7 +102,7 @@
   <div id="tab-open" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-black px-10 h-[280px] font-manuale text-start text-lg">
+        <div class="overflow-y-auto text-black px-10 h-[280px] font-lexend text-start text-lg">
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Ekspresionisme sesuai namanya, mereka suka <span class="text-mainHeader text-xl font-extrabold">mengekspresikan perasaan secara intens dan terbuka</span>. Lukisan-lukisan mereka penuh dengan warna-warna yang mencolok dan goyangan garis yang eksplosif!</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Mereka ini ahli dalam menjelajahi kehidupan batin manusia! <span class="text-mainHeader text-xl font-extrabold">Ekspresionisme suka menggali kedalaman emosi manusia</span>, bahkan yang paling gelap sekalipun. Mereka menghadirkan gambaran tentang gelap dan terang dalam pikiran manusia.</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Ekspresionisme itu seperti filter Instagram yang lucu! Mereka suka <span class="text-mainHeader text-xl font-extrabold">menggunakan bentuk-bentuk yang terdistorsi dan tidak biasa untuk mengekspresikan perasaan</span>. Bayangkan wajah-wajah yang terpelintir dan latar belakang yang menyilaukan.</p><br>
@@ -123,7 +123,7 @@
   <div id="tab-open2" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[420px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-10 h-[300px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-10 h-[300px] font-lexend text-center text-lg">
           <div class="container mx-auto my-8">
             <video id="customVideo" class="w-full h-52">
               <source src="{{ asset('assets/videos/ekspresionisme.mp4') }}" type="video/mp4">
@@ -142,7 +142,7 @@
   <div id="tab-open3" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-16 h-[280px] font-manuale text-center text-lg flex flex-col gap-y-10">
+        <div class="overflow-y-auto text-white px-16 h-[280px] font-lexend text-center text-lg flex flex-col gap-y-10">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/ekspresionisme/ekspresionisme-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -199,7 +199,7 @@
   <div id="tab-open4" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-16 h-[280px] font-manuale text-center text-lg flex flex-col gap-y-10">
+        <div class="overflow-y-auto text-white px-16 h-[280px] font-lexend text-center text-lg flex flex-col gap-y-10">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/ekspresionisme/ekspresionisme2-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -255,7 +255,7 @@
   </div>
   <div id="tab-open5" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
-      <div class="bg-bgNavbar/70 w-[800px] h-[200px] flex flex-col gap-y-5 items-center justify-center font-manuale text-xl text-white">
+      <div class="bg-bgNavbar/70 w-[800px] h-[200px] flex flex-col gap-y-5 items-center justify-center font-lexend text-xl text-white">
         <p><span class="text-2xl font-bold">Awal</span> pergerakan: 1905</p>
         <p><span class="text-2xl font-bold">Akhir</span> pergerakan: 1933</p>
       </div>
@@ -264,7 +264,7 @@
   <div id="tab-open6" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex items-center justify-center">
-        <div class="overflow-y-auto text-white px-10 h-[280px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-10 h-[280px] font-lexend text-center text-lg">
           <p>Yo, jadi, dulu fase klasik gerakan Ekspresionis tuh kejadian sekitar tahun 1905 sampe 1920-an dan menyelinap ke seluruh Eropa. Ada banyak cabang Ekspresionisme yang nanti bakal nyodorin info penting buat banyak orang dan grup kayak Ekspresionisme Abstrak, Neo-Ekspresionisme, sama The School of London gitu. Setelah Perang Dunia I, Ekspresionisme mulai luntur dan pada akhirnya berantakan. Nah, lalu muncul gerakan Neue Sachlichkeit alias Objektivitas Baru yang muncul sebagai reaksi langsung terhadap ke-garingan Ekspresionisme yang kelewat emosional. Plus, Neo-Ekspresionisme juga muncul di Jerman dulu trus nyusul di Amerika Serikat di akhir abad ke-20, yang pada dasarnya ngeulangin gaya Ekspresionis yang udah ada sebelumnya, lo!</p>
         </div>
       </div>
@@ -274,7 +274,7 @@
   <div id="tab-open-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-black px-5 h-[400px] font-manuale text-start text-lg">
+        <div class="overflow-y-auto text-black px-5 h-[400px] font-lexend text-start text-lg">
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Naturalisme itu seperti para pecinta alam! Mereka suka berpetualang menikmati indahnya alam. Kemudian, mereka akan <span class="text-mainHeader text-xl font-extrabold">menggambarkan alam dan kehidupan manusia</span> dengan sangat teliti dan rinci. Lukisan-lukisan mereka penuh dengan detail, mulai dari tekstur daun hingga bulu binatang.</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Mereka juga pecinta kejujuran yang sesungguhnya! Naturalisme suka <span class="text-mainHeader text-xl font-extrabold">menangkap dunia sebagaimana adanya</span>, tanpa menyembunyikan kekurangan atau mempercantiknya. Jadi, apa yang Anda lihat di lukisan-lukisan mereka adalah gambaran yang jujur dari kehidupan sehari-hari.</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Naturalisme menggambarkan kehidupan pedesaan, pekerja keras di ladang, atau mungkin pemandangan indah dari alam liar. Mereka ingin mengajak kita untuk merenungkan bagaimana manusia berinteraksi dengan alam di sekitarnya.</p><br>
@@ -296,7 +296,7 @@
   <div id="tab-open2-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg">
           <div class="container mx-auto my-8">
             <video id="customVideo-m" class="w-full h-52">
               <source src="{{ asset('assets/videos/ekspresionisme.mp4') }}" type="video/mp4">
@@ -315,7 +315,7 @@
   <div id="tab-open3-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70  w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg flex flex-col gap-y-5">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg flex flex-col gap-y-5">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/ekspresionisme/ekspresionisme-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -372,7 +372,7 @@
   <div id="tab-open4-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg flex flex-col gap-y-5">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg flex flex-col gap-y-5">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/ekspresionisme/ekspresionisme2-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -428,7 +428,7 @@
   </div>
   <div id="tab-open5-m" class="z-20 fixed hidden bottom-0 right-0 left-0">
     <div class="flex items-center justify-center w-full h-full bg-bgNavbar/70">
-      <div class="w-full h-[300px] flex flex-col gap-y-5 items-center justify-center font-manuale text-xl text-white">
+      <div class="w-full h-[300px] flex flex-col gap-y-5 items-center justify-center font-lexend text-xl text-white">
         <h2 class=""><span class="text-2xl font-bold">Awal</span> pergerakan: 1905</h2>
         <h2 class=""><span class="text-2xl font-bold">Akhir</span> pergerakan: 1933</h2>
       </div>
@@ -437,7 +437,7 @@
   <div id="tab-open6-m" class="z-20 fixed hidden bottom-0 right-0 left-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg">
           <p>Yo, jadi, dulu fase klasik gerakan Ekspresionis tuh kejadian sekitar tahun 1905 sampe 1920-an dan menyelinap ke seluruh Eropa. Ada banyak cabang Ekspresionisme yang nanti bakal nyodorin info penting buat banyak orang dan grup kayak Ekspresionisme Abstrak, Neo-Ekspresionisme, sama The School of London gitu. Setelah Perang Dunia I, Ekspresionisme mulai luntur dan pada akhirnya berantakan. Nah, lalu muncul gerakan Neue Sachlichkeit alias Objektivitas Baru yang muncul sebagai reaksi langsung terhadap ke-garingan Ekspresionisme yang kelewat emosional. Plus, Neo-Ekspresionisme juga muncul di Jerman dulu trus nyusul di Amerika Serikat di akhir abad ke-20, yang pada dasarnya ngeulangin gaya Ekspresionis yang udah ada sebelumnya, lo!</p>
         </div>
       </div>

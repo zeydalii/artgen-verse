@@ -17,6 +17,22 @@ Route::get('/', function () {
     return view('users.main');
 });
 
+Route::get('/login', function () {
+    return view('users.pages.login');
+});
+
+Route::get('/register', function () {
+    return view('users.pages.register');
+});
+
+Route::get('/area-tantangan', function () {
+    return view('users.pages.area-tantangan');
+});
+
+Route::get('/first-test/area-1', function () {
+    return view('users.pages.first-test.area-1');
+});
+
 Route::get('/timeline', function () {
     return view('users.pages.timeline');
 });

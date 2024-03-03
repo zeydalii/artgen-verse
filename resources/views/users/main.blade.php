@@ -72,7 +72,7 @@
       <img src="{{ asset('assets/pecahan/vector1.png') }}" alt="" class="absolute -z-20 mt-3 phone:mt-7 phone:w-1/2">
       <img src="{{ asset('assets/pecahan/vector2.png') }}" alt="" class="absolute -z-10 phone:w-1/2">
     </div>
-    <ul id="fixedNavbar" class="text-white py-5 flex gap-x-1 phone:gap-x-3 justify-center font-kronaOne">
+    <ul id="fixedNavbar" class="text-white py-5 flex gap-x-1 phone:gap-x-3 justify-center font-montserrat font-bold">
       <li>
         <div class="relative z-20">
           <div>
@@ -81,15 +81,99 @@
   
           <div id="dropdown" class="hidden absolute z-20 mt-2 ml-2 phone:ml-0 w-48 origin-top-right rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
             <div class="py-1 text-center" role="none">
-              <a href="/aliran/neoklasik" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover" role="menuitem" tabindex="-1" id="menu-item-0">NEO KLASIK</a>
-              <a href="/aliran/romantisme" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover" role="menuitem" tabindex="-1" id="menu-item-1">ROMANTISME</a>
-              <a href="/aliran/realisme" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover" role="menuitem" tabindex="-1" id="menu-item-2">REALISME</a>
-              <a href="/aliran/naturalisme" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover" role="menuitem" tabindex="-1" id="menu-item-2">NATURALISME</a>
-              <a href="/aliran/ekspresionisme" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover" role="menuitem" tabindex="-1" id="menu-item-2">EKSPRESIONISME</a>
-              <a href="/aliran/impresionisme" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover" role="menuitem" tabindex="-1" id="menu-item-2">IMPRESIONISME</a>
-              <a href="/aliran/surealisme" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover" role="menuitem" tabindex="-1" id="menu-item-2">SUREALISME</a>
-              <a href="/aliran/kubisme" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover" role="menuitem" tabindex="-1" id="menu-item-2">KUBISME</a>
-              <a href="/aliran/abstrak-ekspresionisme" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover" role="menuitem" tabindex="-1" id="menu-item-2">ABSTRAK</a>
+              <button id="dropdown-button" class="text-white w-full block px-4 py-2 text-sm hover:bg-navbarHover hover:rounded-full hover:shadow-navbarHover hover:border-2 hover:border-white/40" role="menuitem" tabindex="-1">PENGERTIAN</button>
+              <div id="dropdown-open" class="hidden absolute z-20 mt-3 ml-5 phone:-mt-5 phone:ml-[200px] w-[300px] origin-top-right rounded-md bg-bgNavbar shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <div class="h-[300px] flex items-center justify-center">
+                  <div class="overflow-y-auto text-white px-7 h-[250px] text-start text-sm">
+                    <h2 class="font-extrabold text-2xl">ALIRAN SENI LUKIS 2D</h2>
+                    <div class="my-5">
+                      <h4 class="text-xl">Menurut Aristoteles</h4>
+                      <p>Pengertian seni lukis menurut Aristoteles merupakan sesuatu yang selain baik, juga menyenangkan.</p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Menurut Sukaryono (1998)</h4>
+                      <p>Pengertian seni lukis menurut Sukaryono adalah sebuah ungkapan isi hati dan perasaan yang disebut sebagai bahasa seniman yang dikomunikasikan.</p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Menurut Myers (1962)</h4>
+                      <p>Definisi seni lukis menurut Myers merupakan sebuah nilai-nilai intelektual, emosional, simbolis, religius dan nilai-nilai subyektif yang lain.</p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Leo Tolstoy (2000)</h4>
+                      <p>Pengertian seni lukis menurut Leo Tolstoy adalah ungkapan perasaan pencipta yang disampaikan kepada orang lain agar mereka dapat merasakan apa yang dirasakan pelukis.</p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Menurut Harry Sulastianto</h4>
+                      <p>Definisi seni lukis menurut Sulastiano adalah cabang seni rupa murni yang berwujud dua dimensi, biasanya dilakukan di atas kanvas dengan menggunakan cat minyak atau cat akrilik.</p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Menurut Herbert Read</h4>
+                      <p>Pengertian seni lukis menurut Herbert Read adalah kegiatan rohani yang merefleksikan pada jasmani, dan mempunyai daya yang bisa membangkitkan perasaan atau jiwa.</p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Menurut Jim Supangat</h4>
+                      <p>Pengertian seni lukis didefinisikan sebagai suatu upaya menegaskan kembali pengalaman masa lalu pada konteks sekarang.</p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Menurut M. Adler</h4>
+                      <p>Arti seni lukis menurut M. Adler dapat didefinisikan sebagai sesuatu yang dapat memberikan perasaan kesenangan.</p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Menurut Noryan Bahari</h4>
+                      <p>Seni lukis menurut pendapat Noryan Bahari merupakan suatu bahasa ungkapan pengalaman artistik dan ideologi seseorang.</p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Menurut Suyanto (2014)</h4>
+                      <p>Pengertian seni lukis merupakan karya seni rupa yang dituangkan dalam bentuk lukisan hasil dari ekspresi jiwa seorang seniman.</p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Soedarso SP (2002)</h4>
+                      <p>Arti seni lukis menurut Soedarso merupakan sebuah karya manusia yang mengkomunikasikan pengalaman-pengalaman batinnya, pengalaman batin tersebut disajikan secara indah sehingga merangsang timbulnya pengalaman batin pula pada manusia lain yang menghayatinya. Soedarso juga berpendapat bahwa lukis merupakan cabang dari seni rupa yang cara pengungkapannya diwujudkan melalui karya dua dimensional dimana unsur-unsur pokok dalam karya dua dimensional ialah garis dan warna. </p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Menurut Soni Ade & Imam R.</h4>
+                      <p>Definisi lukis menurut adalah kekuatan peradaban manusia, kekuatan budaya, karena dalam melakukan lukis kita dilatih untuk jeli, cermat dan teliti dalam mengamati berbagai fenomena alam dan kehidupannya.</p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Menurut Sudarmaji (1973)</h4>
+                      <p>Pengertian seni lukis menurut Sudarmaji adalah segala manifestasi batin dan pengalaman estetis dengan media grafis, warna, tekstur, volume dan ruang.</p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Menurut Slamet Riyanto</h4>
+                      <p>Pengertian seni lukis menurut Riyanto merupakan salah satu bagian dan ilmu desain grafis.</p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Menurut Bastomi (1992)</h4>
+                      <p>Pengertian seni lukis menurut Bastomi adalah hasil kreativitas penciptanya yang terwujud dalam bentuk kreasi dari hasil pengolahan yang kreatif dan salah satu sifat seni yang menonjol ialah kebaharuannya.</p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Menurut Suwarso Wisetrotomo, M Dwi Marianto & Endah Nawang N</h4>
+                      <p>Pengertian seni lukis bisa diartikan sebagai sebuah pengabdian dalam gambar, perjalanan pengalaman hidup.</p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Thomas Munro (2002)</h4>
+                      <p>Menurut Thomas Munro, arti seni lukis adalah alat buatan manusia untuk menimbulkan efekefek psikologis atas manusia lain yang melihatnya.</p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Menurut Cleaver (1966)</h4>
+                      <p>Pengertian seni lukis menurut Cleaver adalah suatu obyek yang mempunyai kemampuan untuk mengungkapkan dan membangkitkan pengalaman dalam suatu disiplin.</p>
+                    </div>
+                    <div class="my-5">
+                      <h4 class="text-xl">Menurut Galeria Fasya Art Studio</h4>
+                      <p>Pengertian lukis menurut merupakan cabang atau bagian dari seni rupa dimana wujud dari lukis itu sendiri merupakan karya dua dimensi (dwi matra). Meski memiliki dasar pengertian yang sama dengan seni rupa, namun lukis memiliki arti yang lebih karena lukis merupakan sebuah pengembangan yang lebih utuh dari  sekedar menggambar.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="/aliran/neoklasik" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover hover:rounded-full hover:shadow-navbarHover hover:border-2 hover:border-white/40" role="menuitem" tabindex="-1">NEO KLASIK</a>
+              <a href="/aliran/romantisme" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover hover:rounded-full hover:shadow-navbarHover hover:border-2 hover:border-white/40" role="menuitem" tabindex="-1">ROMANTISME</a>
+              <a href="/aliran/realisme" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover hover:rounded-full hover:shadow-navbarHover hover:border-2 hover:border-white/40" role="menuitem" tabindex="-1">REALISME</a>
+              <a href="/aliran/naturalisme" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover hover:rounded-full hover:shadow-navbarHover hover:border-2 hover:border-white/40" role="menuitem" tabindex="-1">NATURALISME</a>
+              <a href="/aliran/ekspresionisme" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover hover:rounded-full hover:shadow-navbarHover hover:border-2 hover:border-white/40" role="menuitem" tabindex="-1">EKSPRESIONISME</a>
+              <a href="/aliran/impresionisme" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover hover:rounded-full hover:shadow-navbarHover hover:border-2 hover:border-white/40" role="menuitem" tabindex="-1">IMPRESIONISME</a>
+              <a href="/aliran/surealisme" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover hover:rounded-full hover:shadow-navbarHover hover:border-2 hover:border-white/40" role="menuitem" tabindex="-1">SUREALISME</a>
+              <a href="/aliran/kubisme" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover hover:rounded-full hover:shadow-navbarHover hover:border-2 hover:border-white/40" role="menuitem" tabindex="-1">KUBISME</a>
+              <a href="/aliran/abstrak-ekspresionisme" class="text-white block px-4 py-2 text-sm hover:bg-navbarHover hover:rounded-full hover:shadow-navbarHover hover:border-2 hover:border-white/40" role="menuitem" tabindex="-1">ABSTRAK</a>
             </div>
           </div>
         </div>
@@ -106,17 +190,17 @@
           </div>
 
           <div id="dropdown2" class="hidden absolute z-10 mt-5 -ml-24 phone:-ml-0 w-[260px] phone:w-[500px] origin-top-right" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-            <div class="flex gap-x-3 phone:gap-x-5 overflow-x-scroll scrollbar-thin pb-3">
+            <div class="flex gap-x-3 phone:gap-x-5 overflow-x-scroll pb-3">
 
               <div class="w-48 phone:w-64 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                 <div id="artistContainer" class="relative cursor-pointer hover:scale-105 transition duration-300">
                   <img src="{{ asset('assets/seniman/frida-kahlo/frida-kahlo.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                   <h2 class="absolute bottom-3 text-white font-bold w-full text-center tracking-widest text-sm phone:text-base">FRIDA KAHLO</h2>
                 </div>
-                <div id="artistDetails" class="w-full hidden bg-senimanBg text-black rounded-xl items-center text-center">
+                <div id="artistDetails" class="w-full hidden bg-senimanBg text-black font-extrabold px-3 rounded-xl items-center text-center">
                   <h2 class="py-3 text-sm phone:text-base">PELUKIS MEKSIKO</h2>
                   <h2 class="pb-3 text-sm phone:text-base">Surealisme, Magic Realisme</h2>
-                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll scrollbar-thin mb-5">
+                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll mb-5 font-bold">
                     <div class="relative mx-5">
                       <img src="{{ asset('assets/seniman/frida-kahlo/frida-art1.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                       <h2 class="absolute bottom-3 text-white w-full text-center text-xs phone:text-sm">Frieda and Diego Rivera, 1931</h2>
@@ -142,10 +226,10 @@
                   <img src="{{ asset('assets/seniman/jackson-pollock/jackson-pollock.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                   <h2 class="absolute bottom-3 text-white font-bold w-full text-center tracking-widest text-sm phone:text-base">JACKSON POLLOCK</h2>
                 </div>
-                <div id="artistDetails2" class="w-full hidden bg-senimanBg text-black rounded-xl items-center text-center">
+                <div id="artistDetails2" class="w-full hidden bg-senimanBg text-black font-extrabold px-3 rounded-xl items-center text-center">
                   <h2 class="py-3 text-sm phone:text-base">PELUKIS AMERIKA</h2>
                   <h2 class="pb-3 text-sm phone:text-base">Abstrak, Ekspresionisme, Surealisme</h2>
-                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll scrollbar-thin mb-5">
+                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll  mb-5 font-bold">
                     <div class="relative mx-5">
                       <img src="{{ asset('assets/seniman/jackson-pollock/jackson-art1.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                       <h2 class="absolute bottom-3 text-white w-full text-center text-xs phone:text-sm">Authumn Rhythm: Number 30, 1950</h2>
@@ -167,10 +251,10 @@
                   <img src="{{ asset('assets/seniman/salvador-dali/salvador-dali.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                   <h2 class="absolute bottom-3 text-white font-bold w-full text-center tracking-widest text-sm phone:text-base">SALVADOR DALI</h2>
                 </div>
-                <div id="artistDetails3" class="w-full hidden bg-senimanBg text-black rounded-xl items-center text-center">
+                <div id="artistDetails3" class="w-full hidden bg-senimanBg text-black font-extrabold px-3 rounded-xl items-center text-center">
                   <h2 class="py-3 text-sm phone:text-base">PELUKIS SPANYOL</h2>
                   <h2 class="pb-3 text-sm phone:text-base">Surealisme</h2>
-                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll scrollbar-thin mb-5">
+                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll  mb-5 font-bold">
                     <div class="relative mx-5">
                       <img src="{{ asset('assets/seniman/salvador-dali/salvador-art1.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                       <h2 class="absolute bottom-3 text-white w-full text-center text-xs phone:text-sm">Persistent of Memory, 1931</h2>
@@ -192,10 +276,10 @@
                   <img src="{{ asset('assets/seniman/leonardo-da-vinci/leonardo-da-vinci.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                   <h2 class="absolute bottom-3 text-white font-bold w-full text-center tracking-widest text-sm phone:text-base">LEONARDO DA VINCI</h2>
                 </div>
-                <div id="artistDetails4" class="w-full hidden bg-senimanBg text-black rounded-xl items-center text-center">
+                <div id="artistDetails4" class="w-full hidden bg-senimanBg text-black font-extrabold px-3 rounded-xl items-center text-center">
                   <h2 class="py-3 text-sm phone:text-base">PELUKIS ITALI</h2>
                   <h2 class="pb-3 text-sm phone:text-base">Renaisans</h2>
-                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll scrollbar-thin mb-5">
+                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll  mb-5 font-bold">
                     <div class="relative mx-5">
                       <img src="{{ asset('assets/seniman/leonardo-da-vinci/leonardo-art1.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                       <h2 class="absolute bottom-3 text-white w-full text-center text-xs phone:text-sm">Ginevra de' Benci, 1474</h2>
@@ -225,10 +309,10 @@
                   <img src="{{ asset('assets/seniman/vincent-van-gogh/vincent-van-gogh.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                   <h2 class="absolute bottom-3 text-white font-bold w-full text-center tracking-widest text-sm phone:text-base">VINCENT VAN GOGH</h2>
                 </div>
-                <div id="artistDetails5" class="w-full hidden bg-senimanBg text-black rounded-xl items-center text-center">
+                <div id="artistDetails5" class="w-full hidden bg-senimanBg text-black font-extrabold px-3 rounded-xl items-center text-center">
                   <h2 class="py-3 text-sm phone:text-base">PELUKIS BELANDA</h2>
                   <h2 class="pb-3 text-sm phone:text-base">Impresionisme</h2>
-                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll scrollbar-thin mb-5">
+                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll  mb-5 font-bold">
                     <div class="relative mx-5">
                       <img src="{{ asset('assets/seniman/vincent-van-gogh/vincent-art1.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                       <h2 class="absolute bottom-3 text-white w-full text-center text-xs phone:text-sm">The Potato Eaters, 1885</h2>
@@ -266,10 +350,10 @@
                   <img src="{{ asset('assets/seniman/pablo-picasso/pablo-picasso.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                   <h2 class="absolute bottom-3 text-white font-bold w-full text-center tracking-widest text-sm phone:text-base">PABLO PICASSO</h2>
                 </div>
-                <div id="artistDetails6" class="w-full hidden bg-senimanBg text-black rounded-xl items-center text-center">
+                <div id="artistDetails6" class="w-full hidden bg-senimanBg text-black font-extrabold px-3 rounded-xl items-center text-center">
                   <h2 class="py-3 text-sm phone:text-base">PELUKIS SPANYOL</h2>
                   <h2 class="pb-3 text-sm phone:text-base">Kubisme, Surealisme</h2>
-                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll scrollbar-thin mb-5">
+                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll  mb-5 font-bold">
                     <div class="relative mx-5">
                       <img src="{{ asset('assets/seniman/pablo-picasso/pablo-art1.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                       <h2 class="absolute bottom-3 text-white w-full text-center text-xs phone:text-sm">The Soup, 1902</h2>
@@ -295,10 +379,10 @@
                   <img src="{{ asset('assets/seniman/raden-saleh/raden-saleh.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                   <h2 class="absolute bottom-3 text-white font-bold w-full text-center tracking-widest px-3 text-sm phone:text-base">RADEN SALEH SJARIF BUSTAMAN</h2>
                 </div>
-                <div id="artistDetails7" class="w-full hidden bg-senimanBg text-black rounded-xl items-center text-center">
+                <div id="artistDetails7" class="w-full hidden bg-senimanBg text-black font-extrabold px-3 rounded-xl items-center text-center">
                   <h2 class="py-3 text-sm phone:text-base">PELUKIS dari SEMARANG</h2>
                   <h2 class="pb-3 text-sm phone:text-base">Romantisme</h2>
-                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll scrollbar-thin mb-5">
+                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll  mb-5 font-bold">
                     <div class="relative mx-5">
                       <img src="{{ asset('assets/seniman/raden-saleh/raden-art1.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                       <h2 class="absolute bottom-3 text-white w-full text-center text-xs phone:text-sm">Perburuan Banteng, 1855</h2>
@@ -324,10 +408,10 @@
                   <img src="{{ asset('assets/seniman/basoeki-abdul/basoeki-abdul.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                   <h2 class="absolute bottom-3 text-white font-bold w-full text-center tracking-widest px-3 text-sm phone:text-base">FRANSISKUS XAVERIUS BASOEKI ABDULLAH</h2>
                 </div>
-                <div id="artistDetails8" class="w-full hidden bg-senimanBg text-black rounded-xl items-center text-center">
+                <div id="artistDetails8" class="w-full hidden bg-senimanBg text-black font-extrabold px-3 rounded-xl items-center text-center">
                   <h2 class="py-3 text-sm phone:text-base">PELUKIS dari SOLO</h2>
                   <h2 class="pb-3 text-sm phone:text-base">Realisme, Naturalisme</h2>
-                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll scrollbar-thin mb-5">
+                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll  mb-5 font-bold">
                     <div class="relative mx-5">
                       <img src="{{ asset('assets/seniman/basoeki-abdul/basoeki-art1.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                       <h2 class="absolute bottom-3 text-white w-full text-center text-xs phone:text-sm">Diponegoro Memimpin Pertempuran, 1940-1960</h2>
@@ -357,10 +441,10 @@
                   <img src="{{ asset('assets/seniman/affandi-koesoema/affandi-koesoema.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                   <h2 class="absolute bottom-3 text-white font-bold w-full text-center tracking-widest text-sm phone:text-base">AFFANDI KOESOEMA</h2>
                 </div>
-                <div id="artistDetails9" class="w-full hidden bg-senimanBg text-black rounded-xl items-center text-center">
+                <div id="artistDetails9" class="w-full hidden bg-senimanBg text-black font-extrabold px-3 rounded-xl items-center text-center">
                   <h2 class="py-3 text-sm phone:text-base">PELUKIS dari CIREBON</h2>
                   <h2 class="pb-3 text-sm phone:text-base">Ekspresionisme, Abstrak</h2>
-                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll scrollbar-thin mb-5">
+                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll  mb-5 font-bold">
                     <div class="relative mx-5">
                       <img src="{{ asset('assets/seniman/affandi-koesoema/affandi-art1.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                       <h2 class="absolute bottom-3 text-white w-full text-center text-xs phone:text-sm">Crab Eating, 1963</h2>
@@ -390,10 +474,10 @@
                   <img src="{{ asset('assets/seniman/sindoedarsono/sindoedarsono.png') }}" alt="" class="w-full rounded-xl" draggable="false">
                   <h2 class="absolute bottom-3 text-white font-bold w-full text-center tracking-widest text-sm phone:text-base">SINDOEDARSONO SOEDJOJONO</h2>
                 </div>
-                <div id="artistDetails10" class="w-full hidden bg-senimanBg text-black rounded-xl items-center text-center">
+                <div id="artistDetails10" class="w-full hidden bg-senimanBg text-black font-extrabold px-3 rounded-xl items-center text-center">
                   <h2 class="py-3 text-sm phone:text-base">PELUKIS dari SUMATERA UTARA</h2>
                   <h2 class="pb-3 text-sm phone:text-base">Ekspresionisme</h2>
-                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll scrollbar-thin mb-5">
+                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll  mb-5 font-bold">
                     <div class="relative mx-5">
                       <img src="{{ asset('assets/seniman/sindoedarsono/sindoedarsono-art1.gif') }}" alt="" class="w-full rounded-xl" draggable="false">
                       <h2 class="absolute bottom-3 text-white w-full text-center text-xs phone:text-sm">Di Depan Kelambu Terbuka, 1939</h2>
@@ -415,10 +499,10 @@
                   <img src="{{ asset('assets/seniman/agus-djaja/agus-djaja.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                   <h2 class="absolute bottom-3 text-white font-bold w-full text-center tracking-widest px-3 text-sm phone:text-base">AGUS DJAJA SUMINTA</h2>
                 </div>
-                <div id="artistDetails11" class="w-full hidden bg-senimanBg text-black rounded-xl items-center text-center">
+                <div id="artistDetails11" class="w-full hidden bg-senimanBg text-black font-extrabold px-3 rounded-xl items-center text-center">
                   <h2 class="py-3 text-sm phone:text-base">PENDIRI DAN KETUA PERSAGI</h2>
                   <h2 class="pb-3 text-sm phone:text-base">Potrait, Abstrak, Semi-Abstrak</h2>
-                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll scrollbar-thin mb-5">
+                  <div class="h-44 phone:h-80 flex flex-col gap-y-3 overflow-y-scroll  mb-5 font-bold">
                     <div class="relative mx-5">
                       <img src="{{ asset('assets/seniman/agus-djaja/agus-art1.jpg') }}" alt="" class="w-full rounded-xl" draggable="false">
                       <h2 class="absolute bottom-3 text-white w-full text-center text-xs phone:text-sm">Gadis Bali, 1955</h2>
@@ -442,15 +526,44 @@
       <li>
         <div class="relative z-20">
           <div>
-            <button id="menu-button3" class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 text-phone phone:text-base">LAINNYA</button>
+            <button id="menu-button3" class="px-4 py-0.5 phone:px-14 phone:py-2 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 text-phone phone:text-base">PETA <br> PETUALANG</button>
           </div>
   
           <div id="dropdown3" class="hidden absolute z-10 mt-2 -ml-32 phone:-ml-0 w-52 origin-top-right rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-            <div class="py-1 text-center" role="none">
-              <a href="#" class="text-white block px-4 py-2 text-md hover:bg-navbarHover" role="menuitem" tabindex="-1" id="menu-item-0">MY ARTGEN</a>
-              <a href="#" class="text-white block px-4 py-2 text-md hover:bg-navbarHover" role="menuitem" tabindex="-1" id="menu-item-1">PRETEST</a>
-              <a href="#" class="text-white block px-4 py-2 text-md hover:bg-navbarHover" role="menuitem" tabindex="-1" id="menu-item-2">POST-TEST</a>
-              <a href="#" class="text-white block px-4 py-2 text-md hover:bg-navbarHover" role="menuitem" tabindex="-1" id="menu-item-2">Tentang Artgen-Verse</a>
+            <div class="py-3 px-3 text-center font-extrabold" role="none">
+              <a href="https://drive.google.com/file/d/1BS58iGIqXonvu3Fdip147M9jmj6nPcWN/view?usp=drive_link" class="text-black bg-senimanBg rounded-xl block px-3 py-3 text-md underline" role="menuitem" tabindex="-1" id="menu-item-0">APA ITU SENI?</a>
+              <a href="#" class="text-black bg-senimanBg rounded-xl block px-3 py-3 text-md my-2" role="menuitem" tabindex="-1" id="menu-item-1">Petualangan Seni</a>
+              <div>
+                <button id="dropdown-button2" class="text-black bg-senimanBg rounded-xl block px-3 py-3 text-md my-2" role="menuitem" tabindex="-1">Tujuan Petualangan</button>
+                <div id="dropdown-open2" class="hidden absolute z-20 mt-2 -ml-[110px] phone:-mt-10 phone:-ml-[320px] w-[300px] origin-top-right rounded-md bg-bgNavbar shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                  <div class="h-[300px] flex items-center justify-center">
+                    <div class="overflow-y-auto text-white px-7 h-[250px] text-start text-sm">
+                      <h2 class="font-extrabold text-2xl">Tujuan Petualangan</h2>
+                      <ul class="my-5 px-5 font-bold list-decimal">
+                        <li class="text-base">Mengerti cara memilih dan mengadaptasi gaya, tema, dan teknik lukisan untuk mengetahui minat dan selera dalam berkarya seni.</li>
+                        <li class="text-base my-4">Mendorong eksplorasi dan eksperimen dalam perilaku kreatif untuk menciptakan karya seni yang orisinal dan inovatif.</li>
+                        <li class="text-base my-4">Mempelajari dan memahami konteks historis, budaya, dan sosial di mana aliran seni lukis 2D berkembang.</li>
+                        <li class="text-base">Meningkatkan kemampuan evaluasi diri untuk menilai sejauh mana tujuan pembelajaran tercapai dan menetapkan langkah-langkah untuk peningkatan lebih lanjut.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button id="dropdown-button3" class="text-black bg-senimanBg rounded-xl block px-3 py-3 text-md" role="menuitem" tabindex="-1">Tentang Artgen-Verse</button>
+                <div id="dropdown-open3" class="hidden absolute z-20 mt-2 -ml-[140px] phone:-mt-10 phone:-ml-[370px] w-[350px] origin-top-right rounded-md bg-bgNavbar shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                  <div class="h-[300px] flex items-center justify-center">
+                    <div class="overflow-y-auto text-white px-7 h-[250px] text-sm font-bold">
+                      <div class="flex justify-center w-full"><img src="{{ asset('assets/pecahan/logo.png') }}" alt="" class="w-[200px]" draggable="false"></div>
+                      <div class="text-start">
+                        <p><span class="text-2xl"><span class="text-4xl">A</span>rtgen-Verse</span> adalah sebuah website yang menghadirkan Art Genre Universe, sebuah dunia yang memperkenalkan Anda pada berbagai aliran seni rupa dari seluruh jagad ini. Di sini, kami mengundang Anda untuk menjelajahi keberagaman aliran seni rupa tanpa rasa takut, dan menginspirasi Anda untuk menciptakan karya-karya yang unik dan penuh ekspresi. Dengan penjelasan yang jelas dan mudah dimengerti tentang setiap karakteristik aliran seni rupa, Anda akan semakin memahami dan merasakan koneksi dengan jenis seni yang paling sesuai dengan kepribadian Anda.</p> <br>
+                        <p class="text-xl">Apakah Anda seorang petualang yang berani seperti ekspresionisme, atau lebih suka bermain aman dengan realisme yang tajam?</p> <br>
+                        <p>Artgen-Verse hadir untuk membantu Anda menemukan jati diri artistik Anda sendiri dan mengeksplorasi potensi kreatif yang tak terbatas. Jadi, mari kita mulai menjelajahi dunia seni rupa bersama-sama, dan biarkan imajinasi Anda berkembang dalam Artgen-Verse!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -461,6 +574,9 @@
   <div id="bg-blur" class="fixed hidden z-10 bg-black/45 top-0 right-0 left-0 bottom-0"></div>
   <div id="bg-blur2" class="fixed hidden z-10 bg-black/45 top-0 right-0 left-0 bottom-0"></div>
   <div id="bg-blur3" class="fixed hidden z-10 bg-black/45 top-0 right-0 left-0 bottom-0"></div>
+  <div id="bg-blur4" class="fixed hidden z-10 bg-black/45 top-0 right-0 left-0 bottom-0"></div>
+  <div id="bg-blur5" class="fixed hidden z-10 bg-black/45 top-0 right-0 left-0 bottom-0"></div>
+  <div id="bg-blur6" class="fixed hidden z-10 bg-black/45 top-0 right-0 left-0 bottom-0"></div>
   
   <div class="flex justify-center items-center mt-10 phone:mt-40">
     <div class="w-full phone:w-1/2 flex justify-start">
@@ -468,10 +584,10 @@
         <img src="{{ asset('assets/karakter/neoklasik.png') }}" alt="" class="w-[550px] hidden phone:block cursor-pointer">
         <img src="{{ asset('assets/karakter/neoklasik-m.png') }}" alt="" class="w-full phone:hidden">
       </div>
-      <div class="w-7/12 phone:w-2/5 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-kronaOne">
-        <h1 class="text-base phone:text-4xl text-neoklasik"><span class="text-3xl phone:text-8xl">N</span>EO KLASIK</h1>
-        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-xs hover:bg-navbarHover hover:shadow-navbarHover transition duration-300" onclick="location.href='/aliran/neoklasik'">JELAJAHI</button>
-        <div class="flex gap-x-2 phone:gap-x-5 overflow-x-scroll scrollbar-thin h-28 phone:h-44 mt-3">
+      <div class="w-7/12 phone:w-2/5 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-montserrat">
+        <h1 class="text-base phone:text-4xl text-neoklasik font-extrabold"><span class="text-3xl phone:text-8xl">N</span>EO KLASIK</h1>
+        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-sm hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 font-bold" onclick="location.href='/aliran/neoklasik'">JELAJAHI</button>
+        <div class="flex gap-x-2 phone:gap-x-5 overflow-x-scroll  h-28 phone:h-44 mt-3">
           <img src="{{ asset('assets/neoklasik/neoclassicism_1.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/neoklasik/neoclassicism_2.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/neoklasik/neoclassicism_3.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
@@ -483,10 +599,10 @@
   
   <div class="flex justify-center items-center mt-10 phone:mt-40">
     <div class="w-full phone:w-1/2 flex">
-      <div class="w-7/12 phone:w-2/5 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-end font-kronaOne">
-        <h1 class="text-base phone:text-4xl text-bgNavbar"><span class="text-3xl phone:text-8xl">R</span>OMANTISME</h1>
-        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-xs hover:bg-navbarHover hover:shadow-navbarHover transition duration-300" onclick="location.href='/aliran/romantisme'">JELAJAHI</button>
-        <div class="flex flex-row-reverse gap-x-2 phone:gap-x-5 overflow-x-scroll scrollbar-thin h-28 phone:h-44 mt-3">
+      <div class="w-7/12 phone:w-2/5 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-end font-montserrat">
+        <h1 class="text-base phone:text-4xl text-bgNavbar font-extrabold"><span class="text-3xl phone:text-8xl">R</span>OMANTISME</h1>
+        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-sm hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 font-bold" onclick="location.href='/aliran/romantisme'">JELAJAHI</button>
+        <div class="flex flex-row-reverse gap-x-2 phone:gap-x-5 overflow-x-scroll  h-28 phone:h-44 mt-3">
           <img src="{{ asset('assets/romantisme/romanticism_1.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/romantisme/romanticism_2.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/romantisme/romanticism_3.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
@@ -504,10 +620,10 @@
       <div class="w-7/12 phone:w-3/5 flex">
         <img src="{{ asset('assets/karakter/realisme.png') }}" alt="" class="w-[550px]">
       </div>
-      <div class="w-5/12 phone:w-2/5 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-kronaOne">
-        <h1 class="text-base phone:text-4xl text-realisme"><span class="text-3xl phone:text-8xl">R</span>EALISME</h1>
-        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-xs hover:bg-navbarHover hover:shadow-navbarHover transition duration-300" onclick="location.href='/aliran/realisme'">JELAJAHI</button>
-        <div class="flex gap-x-2 phone:gap-x-5 overflow-x-scroll scrollbar-thin h-28 phone:h-44 mt-3">
+      <div class="w-5/12 phone:w-2/5 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-montserrat">
+        <h1 class="text-base phone:text-4xl text-realisme font-extrabold"><span class="text-3xl phone:text-8xl">R</span>EALISME</h1>
+        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-sm hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 font-bold" onclick="location.href='/aliran/realisme'">JELAJAHI</button>
+        <div class="flex gap-x-2 phone:gap-x-5 overflow-x-scroll  h-28 phone:h-44 mt-3">
           <img src="{{ asset('assets/realisme/realism_1.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/realisme/realism_2.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/realisme/realism_3.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
@@ -519,10 +635,10 @@
   
   <div class="flex justify-center items-center mt-10 phone:mt-40">
     <div class="w-full phone:w-1/2 flex">
-      <div class="w-7/12 phone:w-2/5 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-end font-kronaOne">
-        <h1 class="text-base phone:text-4xl text-naturalisme"><span class="text-3xl phone:text-8xl">N</span>ATURALISME</h1>
-        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-xs hover:bg-navbarHover hover:shadow-navbarHover transition duration-300" onclick="location.href='/aliran/naturalisme'">JELAJAHI</button>
-        <div class="flex flex-row-reverse gap-x-2 phone:gap-x-5 overflow-x-scroll scrollbar-thin h-28 phone:h-44 mt-3">
+      <div class="w-7/12 phone:w-2/5 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-end font-montserrat">
+        <h1 class="text-base phone:text-4xl text-naturalisme font-extrabold"><span class="text-3xl phone:text-8xl">N</span>ATURALISME</h1>
+        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-sm hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 font-bold" onclick="location.href='/aliran/naturalisme'">JELAJAHI</button>
+        <div class="flex flex-row-reverse gap-x-2 phone:gap-x-5 overflow-x-scroll  h-28 phone:h-44 mt-3">
           <img src="{{ asset('assets/naturalisme/naturalism_1.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/naturalisme/naturalism_2.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/naturalisme/naturalism_3.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
@@ -541,10 +657,10 @@
       <div class="w-5/12 phone:w-6/12 flex">
         <img src="{{ asset('assets/karakter/ekspresionisme.png') }}" alt="" class="w-[500px]">
       </div>
-      <div class="w-7/12 phone:w-6/12 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-kronaOne">
-        <h1 class="text-base phone:text-4xl text-ekspresionisme"><span class="text-3xl phone:text-8xl">E</span>KSPRESIONISME</h1>
-        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-xs hover:bg-navbarHover hover:shadow-navbarHover transition duration-300" onclick="location.href='/aliran/ekspresionisme'">JELAJAHI</button>
-        <div class="flex gap-x-2 phone:gap-x-5 overflow-x-scroll scrollbar-thin h-28 phone:h-44 mt-3">
+      <div class="w-7/12 phone:w-6/12 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-montserrat">
+        <h1 class="text-base phone:text-4xl text-ekspresionisme font-extrabold"><span class="text-3xl phone:text-8xl">E</span>KSPRESIONISME</h1>
+        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-sm hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 font-bold" onclick="location.href='/aliran/ekspresionisme'">JELAJAHI</button>
+        <div class="flex gap-x-2 phone:gap-x-5 overflow-x-scroll  h-28 phone:h-44 mt-3">
           <img src="{{ asset('assets/ekspresionisme/expressionism_1.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/ekspresionisme/expressionism_2.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/ekspresionisme/expressionism_3.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
@@ -556,10 +672,10 @@
   
   <div class="flex justify-center items-center mt-10 phone:mt-40">
     <div class="w-full phone:w-1/2 flex">
-      <div class="w-6/12 phone:w-2/5 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-end font-kronaOne">
-        <h1 class="text-base phone:text-4xl text-impresionisme"><span class="text-3xl phone:text-8xl">I</span>MPRESIONISME</h1>
-        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-xs hover:bg-navbarHover hover:shadow-navbarHover transition duration-300" onclick="location.href='/aliran/impresionisme'">JELAJAHI</button>
-        <div class="flex flex-row-reverse gap-x-2 phone:gap-x-5 overflow-x-scroll scrollbar-thin h-28 phone:h-44 mt-3">
+      <div class="w-6/12 phone:w-2/5 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-end font-montserrat">
+        <h1 class="text-base phone:text-4xl text-impresionisme font-extrabold"><span class="text-3xl phone:text-8xl">I</span>MPRESIONISME</h1>
+        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-sm hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 font-bold" onclick="location.href='/aliran/impresionisme'">JELAJAHI</button>
+        <div class="flex flex-row-reverse gap-x-2 phone:gap-x-5 overflow-x-scroll  h-28 phone:h-44 mt-3">
           <img src="{{ asset('assets/impresionisme/impressionism_1.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/impresionisme/impressionism_2.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/impresionisme/impressionism_3.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
@@ -577,10 +693,10 @@
       <div class="w-6/12 phone:w-7/12 flex">
         <img src="{{ asset('assets/karakter/surealisme.png') }}" alt="" class="w-[550px]">
       </div>
-      <div class="w-6/12 phone:w-5/12 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-kronaOne">
-        <h1 class="text-base phone:text-4xl text-surealisme"><span class="text-3xl phone:text-8xl">S</span>UREALISME</h1>
-        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-xs hover:bg-navbarHover hover:shadow-navbarHover transition duration-300" onclick="location.href='/aliran/surealisme'">JELAJAHI</button>
-        <div class="flex gap-x-2 phone:gap-x-5 overflow-x-scroll scrollbar-thin h-28 phone:h-44 mt-3">
+      <div class="w-6/12 phone:w-5/12 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-montserrat">
+        <h1 class="text-base phone:text-4xl text-surealisme font-extrabold"><span class="text-3xl phone:text-8xl">S</span>UREALISME</h1>
+        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-sm hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 font-bold" onclick="location.href='/aliran/surealisme'">JELAJAHI</button>
+        <div class="flex gap-x-2 phone:gap-x-5 overflow-x-scroll  h-28 phone:h-44 mt-3">
           <img src="{{ asset('assets/surealisme/surrealism_1.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/surealisme/surrealism_2.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/surealisme/surrealism_3.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
@@ -592,10 +708,10 @@
   
   <div class="flex justify-center items-center mt-10 phone:mt-40">
     <div class="w-full phone:w-1/2 flex">
-      <div class="w-7/12 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-end font-kronaOne">
-        <h1 class="text-base phone:text-4xl text-kubisme"><span class="text-3xl phone:text-8xl">K</span>UBIS<span class="text-kubisme2">M</span>E</h1>
-        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-xs hover:bg-navbarHover hover:shadow-navbarHover transition duration-300" onclick="location.href='/aliran/kubisme'">JELAJAHI</button>
-        <div class="flex flex-row-reverse gap-x-2 phone:gap-x-5 overflow-x-scroll scrollbar-thin h-28 phone:h-44 mt-3">
+      <div class="w-7/12 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-end font-montserrat">
+        <h1 class="text-base phone:text-4xl text-kubisme font-extrabold"><span class="text-3xl phone:text-8xl">K</span>UBIS<span class="text-kubisme2">M</span>E</h1>
+        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-sm hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 font-bold" onclick="location.href='/aliran/kubisme'">JELAJAHI</button>
+        <div class="flex flex-row-reverse gap-x-2 phone:gap-x-5 overflow-x-scroll  h-28 phone:h-44 mt-3">
           <img src="{{ asset('assets/kubisme/cubism_1.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/kubisme/cubism_2.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/kubisme/cubism_3.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
@@ -614,13 +730,13 @@
       <div class="w-5/12 phone:w-7/12 flex">
         <img src="{{ asset('assets/karakter/abstrak.png') }}" alt="" class="w-[500px]">
       </div>
-      <div class="w-7/12 phone:w-5/12 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-kronaOne">
-        <h1 class="text-base phone:text-4xl">
+      <div class="w-7/12 phone:w-5/12 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-montserrat">
+        <h1 class="text-base phone:text-4xl font-extrabold">
           <span class="text-3xl phone:text-8xl text-[#977E2B]">A</span><span class="text-[#F1802F]">B</span><span class="text-[#09001E]">S</span><span class="text-[#C9C9C8]">T</span><span class="text-[#79952C]">R</span><span class="text-[#666563]">A</span><span class="text-[#542C93]">K</span>
         </h1>
-        <h1 class="text-base phone:text-4xl text-surealisme">EKSPRESIONISME</h1>
-        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-xs hover:bg-navbarHover hover:shadow-navbarHover transition duration-300" onclick="location.href='/aliran/abstrak-ekspresionisme'">JELAJAHI</button>
-        <div class="flex gap-x-2 phone:gap-x-5 overflow-x-scroll scrollbar-thin h-28 phone:h-44 mt-3">
+        <h1 class="text-base phone:text-4xl text-surealisme font-extrabold">EKSPRESIONISME</h1>
+        <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-sm hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 font-bold" onclick="location.href='/aliran/abstrak-ekspresionisme'">JELAJAHI</button>
+        <div class="flex gap-x-2 phone:gap-x-5 overflow-x-scroll  h-28 phone:h-44 mt-3">
           <img src="{{ asset('assets/abstrak/abstract_1.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/abstrak/abstract_2.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
           <img src="{{ asset('assets/abstrak/abstract_3.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
@@ -924,6 +1040,93 @@
         dropdown.classList.add('hidden');
         button.setAttribute('aria-expanded', 'false');
         button.classList.remove('bg-navbarHover', 'shadow-navbarHover');
+        bgBlur.classList.add('hidden');
+      }
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const button = document.getElementById('dropdown-button');
+    const dropdown = document.getElementById('dropdown-open');
+    const bgBlur = document.getElementById('bg-blur4');
+
+    button.addEventListener('click', function () {
+      const expanded = button.getAttribute('aria-expanded') === 'true' || false;
+      
+      if (expanded) {
+        dropdown.classList.add('hidden');
+        button.setAttribute('aria-expanded', 'false');
+        button.classList.remove('bg-navbarHover', 'shadow-navbarHover', 'rounded-full', 'border-2', 'border-white/40');
+        bgBlur.classList.add('hidden');
+      } else {
+        dropdown.classList.remove('hidden');
+        button.setAttribute('aria-expanded', 'true');
+        button.classList.add('bg-navbarHover', 'shadow-navbarHover', 'rounded-full', 'border-2', 'border-white/40');
+        bgBlur.classList.remove('hidden');
+      }
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+        dropdown.classList.add('hidden');
+        button.setAttribute('aria-expanded', 'false');
+        button.classList.remove('bg-navbarHover', 'shadow-navbarHover', 'rounded-full', 'border-2', 'border-white/40');
+        bgBlur.classList.add('hidden');
+      }
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const button = document.getElementById('dropdown-button2');
+    const dropdown = document.getElementById('dropdown-open2');
+    const bgBlur = document.getElementById('bg-blur5');
+
+    button.addEventListener('click', function () {
+      const expanded = button.getAttribute('aria-expanded') === 'true' || false;
+      
+      if (expanded) {
+        dropdown.classList.add('hidden');
+        button.setAttribute('aria-expanded', 'false');
+        bgBlur.classList.add('hidden');
+      } else {
+        dropdown.classList.remove('hidden');
+        button.setAttribute('aria-expanded', 'true');
+        bgBlur.classList.remove('hidden');
+      }
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+        dropdown.classList.add('hidden');
+        button.setAttribute('aria-expanded', 'false');
+        bgBlur.classList.add('hidden');
+      }
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const button = document.getElementById('dropdown-button3');
+    const dropdown = document.getElementById('dropdown-open3');
+    const bgBlur = document.getElementById('bg-blur6');
+
+    button.addEventListener('click', function () {
+      const expanded = button.getAttribute('aria-expanded') === 'true' || false;
+      
+      if (expanded) {
+        dropdown.classList.add('hidden');
+        button.setAttribute('aria-expanded', 'false');
+        bgBlur.classList.add('hidden');
+      } else {
+        dropdown.classList.remove('hidden');
+        button.setAttribute('aria-expanded', 'true');
+        bgBlur.classList.remove('hidden');
+      }
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+        dropdown.classList.add('hidden');
+        button.setAttribute('aria-expanded', 'false');
         bgBlur.classList.add('hidden');
       }
     });

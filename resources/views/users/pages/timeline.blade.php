@@ -1,12 +1,12 @@
 @extends('users.partials.master')
 @section('content')
 
-<div class="w-full">
+<div class="w-full font-bold">
   <div class="w-full flex items-center">
     <div class="w-full text-end">
-      <button class="mr-5 phone:mr-28 text-phone phone:text-base font-kronaOne bg-senimanBg p-2" onclick="location.href='/'">HOME</button>
+      <button class="mr-5 phone:mr-28 text-phone phone:text-base font-montserrat bg-senimanBg p-2" onclick="location.href='/'">HOME</button>
     </div>
-    <h2 class="text-3xl phone:text-5xl font-kronaOne text-center py-10 text-neoklasik">TIMELINES</h2>
+    <h2 class="text-3xl phone:text-5xl font-montserrat font-extrabold text-center py-10 text-neoklasik">TIMELINES</h2>
     <div class="w-full"></div>
   </div>
   
@@ -50,7 +50,7 @@
           <button id="tab-button" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-scroll scrollbar-thin pb-3">
                   <div class="h-40 phone:h-52 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -79,7 +79,7 @@
           </div>
         </div>
         <div class="w-full">
-          <h5 class="text-xs phone:text-base font-kronaOne">Romanesque</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Romanesque</h5>
         </div>
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-[125px]">
@@ -92,13 +92,13 @@
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-8">
         <div class="w-full text-end">
-          <h5 class="text-xs phone:text-base font-kronaOne">Gothic</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Gothic</h5>
         </div>
         <div class="">
           <button id="tab-button2" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open2" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-scroll scrollbar-thin pb-3">
                   <div class="h-40 phone:h-52 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -144,7 +144,7 @@
           <button id="tab-button3" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open3" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-scroll scrollbar-thin pb-3">
                   <div class="h-40 phone:h-48 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -173,7 +173,7 @@
           </div>
         </div>
         <div class="w-full">
-          <h5 class="text-xs phone:text-base font-kronaOne">Renaisans</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Renaisans</h5>
         </div>
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-[125px]">
@@ -186,13 +186,13 @@
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-8">
         <div class="w-full text-end">
-          <h5 class="text-xs phone:text-base font-kronaOne">Mannerisme</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Mannerisme</h5>
         </div>
         <div class="">
           <button id="tab-button4" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open4" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-scroll scrollbar-thin pb-3">
                   <div class="h-40 phone:h-48 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -238,7 +238,7 @@
           <button id="tab-button5" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open5" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-scroll scrollbar-thin pb-3">
                   <div class="h-40 phone:h-52 flex flex-col justify-center gap-y-3 phone:gap-y-5 shrink-0">
                     <h2 class="text-white uppercase text-xs phone:text-sm">Barok</h2>
@@ -301,7 +301,7 @@
           </div>
         </div>
         <div class="w-full">
-          <h5 class="text-xs phone:text-base font-kronaOne">Barok-Rococo</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Barok-Rococo</h5>
         </div>
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-[125px]">
@@ -314,7 +314,7 @@
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-8">
         <div class="w-full text-end">
-          <h5 class="text-xs phone:text-base font-kronaOne">Neoklasik</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Neoklasik</h5>
         </div>
         <div class="">
           <button class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]" onclick="location.href='/aliran/neoklasik'"></button>
@@ -337,7 +337,7 @@
           <button class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]" onclick="location.href='/aliran/romantisme'"></button>
         </div>
         <div class="w-full">
-          <h5 class="text-xs phone:text-base font-kronaOne">Romantisme</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Romantisme</h5>
         </div>
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-[125px]">
@@ -350,7 +350,7 @@
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-8">
         <div class="w-full text-end">
-          <h5 class="text-xs phone:text-base font-kronaOne">Realisme</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Realisme</h5>
         </div>
         <div class="">
           <button class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]" onclick="location.href='/aliran/realisme'"></button>
@@ -373,7 +373,7 @@
           <button id="tab-button6" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open6" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-scroll scrollbar-thin pb-3">
                   <div class="h-40 phone:h-52 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -402,7 +402,7 @@
           </div>
         </div>
         <div class="w-full">
-          <h5 class="text-xs phone:text-base font-kronaOne">Pra-Raphaelite</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Pra-Raphaelite</h5>
         </div>
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-[125px]">
@@ -415,7 +415,7 @@
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-8">
         <div class="w-full text-end">
-          <h5 class="text-xs phone:text-base font-kronaOne">Impresionisme</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Impresionisme</h5>
         </div>
         <div class="">
           <button class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]" onclick="location.href='/aliran/impresionisme'"></button>
@@ -438,7 +438,7 @@
           <button class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]" onclick="location.href='/aliran/naturalisme'"></button>
         </div>
         <div class="w-full">
-          <h5 class="text-xs phone:text-base font-kronaOne">Naturalisme</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Naturalisme</h5>
         </div>
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-[125px]">
@@ -451,13 +451,13 @@
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-8">
         <div class="w-full text-end">
-          <h5 class="text-xs phone:text-base font-kronaOne">Post-Impresionisme</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Post-Impresionisme</h5>
         </div>
         <div class="">
           <button id="tab-button7" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open7" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-scroll scrollbar-thin pb-3">
                   <div class="h-40 phone:h-48 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -503,7 +503,7 @@
           <button id="tab-button8" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open8" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-scroll scrollbar-thin pb-3">
                   <div class="h-40 phone:h-52 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -532,7 +532,7 @@
           </div>
         </div>
         <div class="w-full">
-          <h5 class="text-xs phone:text-base font-kronaOne">Simbolisme</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Simbolisme</h5>
         </div>
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-[125px]">
@@ -545,7 +545,7 @@
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-8">
         <div class="w-full text-end">
-          <h5 class="text-xs phone:text-base font-kronaOne">Ekspresionisme</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Ekspresionisme</h5>
         </div>
         <div class="">
           <button class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]" onclick="location.href='/aliran/ekspresionisme'"></button>
@@ -568,7 +568,7 @@
           <button id="tab-button9" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open9" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-auto scrollbar-thin pb-3">
                   <div class="h-40 phone:h-52 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -597,7 +597,7 @@
           </div>
         </div>
         <div class="w-full">
-          <h5 class="text-xs phone:text-base font-kronaOne">Art Noveau</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Art Noveau</h5>
         </div>
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-[125px]">
@@ -610,7 +610,7 @@
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-8">
         <div class="w-full text-end">
-          <h5 class="text-xs phone:text-base font-kronaOne">Kubisme</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Kubisme</h5>
         </div>
         <div class="">
           <button class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]" onclick="location.href='/aliran/kubisme'"></button>
@@ -633,7 +633,7 @@
           <button id="tab-button10" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open10" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-scroll scrollbar-thin pb-3">
                   <div class="h-40 phone:h-48 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -662,7 +662,7 @@
           </div>
         </div>
         <div class="w-full">
-          <h5 class="text-xs phone:text-base font-kronaOne">Futurisme</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Futurisme</h5>
         </div>
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-[125px]">
@@ -675,13 +675,13 @@
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-8">
         <div class="w-full text-end">
-          <h5 class="text-xs phone:text-base font-kronaOne">Dadaisme</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Dadaisme</h5>
         </div>
         <div class="">
           <button id="tab-button11" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open11" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-scroll scrollbar-thin pb-3">
                   <div class="h-40 phone:h-52 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div class="h-full flex gap-x-3 phone:gap-x-5">
@@ -726,7 +726,7 @@
           <button id="tab-button12" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open12" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-auto scrollbar-thin pb-3">
                   <div class="h-40 phone:h-52 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -755,7 +755,7 @@
           </div>
         </div>
         <div class="w-full">
-          <h5 class="text-xs phone:text-base font-kronaOne">New Objectivity</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">New Objectivity</h5>
         </div>
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-[125px]">
@@ -768,13 +768,13 @@
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-8">
         <div class="w-full text-end">
-          <h5 class="text-xs phone:text-base font-kronaOne">Presisiisme</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Presisiisme</h5>
         </div>
         <div class="">
           <button id="tab-button13" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open13" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-scroll scrollbar-thin pb-3">
                   <div class="h-40 phone:h-52 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -820,7 +820,7 @@
           <button id="tab-button14" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open14" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-auto scrollbar-thin pb-3">
                   <div class="h-40 phone:h-52 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -849,7 +849,7 @@
           </div>
         </div>
         <div class="w-full">
-          <h5 class="text-xs phone:text-base font-kronaOne">Art Deco</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Art Deco</h5>
         </div>
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-[125px]">
@@ -862,13 +862,13 @@
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-8">
         <div class="w-full text-end">
-          <h5 class="text-xs phone:text-base font-kronaOne">Bauhaus</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Bauhaus</h5>
         </div>
         <div class="">
           <button id="tab-button15" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open15" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-scroll scrollbar-thin pb-3">
                   <div class="h-40 phone:h-52 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -914,7 +914,7 @@
           <button class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]" onclick="location.href='/aliran/surealisme'"></button>
         </div>
         <div class="w-full">
-          <h5 class="text-xs phone:text-base font-kronaOne">Surealisme</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Surealisme</h5>
         </div>
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-[125px]">
@@ -927,7 +927,7 @@
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-8">
         <div class="w-full text-end">
-          <h5 class="text-xs phone:text-base font-kronaOne">Abstrak <br> Ekspresionisme</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Abstrak <br> Ekspresionisme</h5>
         </div>
         <div class="">
           <button class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]" onclick="location.href='/aliran/abstrak-ekspresionisme'"></button>
@@ -950,7 +950,7 @@
           <button id="tab-button16" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open16" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-auto scrollbar-thin pb-3">
                   <div class="h-40 phone:h-52 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -979,7 +979,7 @@
           </div>
         </div>
         <div class="w-full">
-          <h5 class="text-xs phone:text-base font-kronaOne">Pop-Art</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Pop-Art</h5>
         </div>
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-[125px]">
@@ -992,13 +992,13 @@
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-8">
         <div class="w-full text-end">
-          <h5 class="text-xs phone:text-base font-kronaOne">Arte Povera</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Arte Povera</h5>
         </div>
         <div class="">
           <button id="tab-button17" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open17" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-scroll scrollbar-thin pb-3">
                   <div class="h-40 phone:h-52 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -1044,7 +1044,7 @@
           <button id="tab-button18" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open18" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-auto scrollbar-thin pb-3">
                   <div class="h-40 phone:h-52 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -1073,7 +1073,7 @@
           </div>
         </div>
         <div class="w-full">
-          <h5 class="text-xs phone:text-base font-kronaOne">Minimalisme</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Minimalisme</h5>
         </div>
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-[125px]">
@@ -1086,13 +1086,13 @@
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-8">
         <div class="w-full text-end">
-          <h5 class="text-xs phone:text-base font-kronaOne">Fotorealisme</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Fotorealisme</h5>
         </div>
         <div class="">
           <button id="tab-button19" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open19" class="hidden absolute z-20 mt-2 -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-scroll scrollbar-thin pb-3">
                   <div class="h-40 phone:h-52 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -1145,7 +1145,7 @@
           <button id="tab-button20" class="rounded-full bg-mainHeader p-3.5 phone:p-4 blur-[1px]"></button>
           <div class="relative">
             <div id="tab-open20" class="hidden absolute z-20 -mt-[250px] phone:-mt-[300px] -ml-40 phone:-ml-56 w-[348px] phone:w-[480px] rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div class="pt-4 px-4 pb-2 text-center font-kronaOne" role="none">
+              <div class="pt-4 px-4 pb-2 text-center font-montserrat" role="none">
                 <div class="flex gap-x-3 phone:gap-x-5 overflow-x-auto scrollbar-thin pb-3">
                   <div class="h-40 phone:h-48 flex flex-col gap-y-3 phone:gap-y-5 shrink-0">
                     <div id="artistContainer" class="relative">
@@ -1181,7 +1181,7 @@
           </div>
         </div>
         <div class="w-full">
-          <h5 class="text-xs phone:text-base font-kronaOne">Seni Kontemporer</h5>
+          <h5 class="text-xs phone:text-base font-montserrat">Seni Kontemporer</h5>
         </div>
       </div>
       <div class="w-full flex gap-x-3 phone:gap-x-5 items-center h-[125px]">

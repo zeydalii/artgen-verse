@@ -12,13 +12,13 @@
 <div id="container" class="hidden">
   <div class="w-full flex items-center py-3 phone:py-0">
     <div class="w-full flex flex-col phone:flex-row gap-y-3 gap-x-5 justify-end">
-      <button class="font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/'">HOME</button>
-      <button class="hidden phone:block font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
+      <button class="font-montserrat text-phone phone:text-base font-bold bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/'">HOME</button>
+      <button class="hidden phone:block font-montserrat text-phone font-bold phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
     </div>
     <div class="phone:hidden w-full flex justify-center">
-      <button class="font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
+      <button class="font-montserrat text-phone phone:text-base font-bold bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
     </div>
-    <h1 class="hidden phone:block w-full text-3xl phone:text-4xl font-kronaOne text-impresionisme text-center"><span class="text-5xl phone:text-8xl">I</span>MPRESIONISME</h1>
+    <h1 class="hidden phone:block w-full text-3xl phone:text-5xl font-montserrat text-impresionisme font-extrabold text-center"><span class="text-5xl phone:text-8xl">I</span>MPRESIONISME</h1>
     <div class="w-full flex justify-end phone:justify-start">
       <input id="playButton" type="hidden" value="PLAY" onclick="play()">
       <input id="pauseButton" type="hidden" value="PAUSE" onclick="pause()">
@@ -31,7 +31,7 @@
   </div>
   
   <div>
-    <h1 class="phone:hidden w-full text-2xl font-kronaOne text-impresionisme text-center"><span class="text-5xl">I</span>MPRESIONISME</h1>
+    <h1 class="phone:hidden w-full text-2xl font-montserrat text-impresionisme font-extrabold text-center"><span class="text-5xl">I</span>MPRESIONISME</h1>
   </div>
   
   <img src="{{ asset('assets/pecahan/ellipse1.png') }}" alt="" class="hidden phone:block absolute top-0 left-0 -z-20" draggable="false">
@@ -102,7 +102,7 @@
   <div id="tab-open" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-black px-10 h-[280px] font-manuale text-start text-lg">
+        <div class="overflow-y-auto text-black px-10 h-[280px] font-lexend text-start text-lg">
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Impresionisme itu pakai palet warna-warna ceria yang meledak-ledak! Mereka suka <span class="text-mainHeader text-xl font-extrabold">menggunakan warna-warna terang dan cerah</span> untuk menangkap cahaya alami yang indah. Bayangkan lukisan-lukisan dengan warna-warna yang menyilaukan mata!</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Mereka menggunakan sapuan kuas yang cepat dan bebas! Impresionisme suka <span class="text-mainHeader text-xl font-extrabold">menangkap momen dengan spontanitas</span>, jadi mereka sering menggunakan sapuan-sapuan kuas yang cepat dan energik. Ini memberikan kesan yang hidup dan bergerak pada lukisan-lukisan mereka.</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Mereka adalah pengagum cahaya alami dan atmosfer! Impresionisme suka menangkap efek cahaya matahari yang berkilauan dan atmosfer yang berubah-ubah. Mereka ingin menghadirkan kesan tentang bagaimana <span class="text-mainHeader text-xl font-extrabold">cahaya dan udara bisa memengaruhi suasana.</span></p><br>
@@ -124,7 +124,7 @@
   <div id="tab-open2" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[420px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-10 h-[300px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-10 h-[300px] font-lexend text-center text-lg">
           <div class="container mx-auto my-8">
             <video id="customVideo" class="w-full h-52">
               <source src="{{ asset('assets/videos/impresionisme.mp4') }}" type="video/mp4">
@@ -144,7 +144,7 @@
   <div id="tab-open3" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-16 h-[280px] font-manuale text-center text-lg flex flex-col gap-y-10">
+        <div class="overflow-y-auto text-white px-16 h-[280px] font-lexend text-center text-lg flex flex-col gap-y-10">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/impresionisme/impresionisme-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -194,7 +194,7 @@
   <div id="tab-open4" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-16 h-[280px] font-manuale text-center text-lg flex flex-col gap-y-10">
+        <div class="overflow-y-auto text-white px-16 h-[280px] font-lexend text-center text-lg flex flex-col gap-y-10">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/impresionisme/impresionisme2-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -250,7 +250,7 @@
   </div>
   <div id="tab-open5" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
-      <div class="bg-bgNavbar/70 w-[800px] h-[200px] flex flex-col gap-y-5 items-center justify-center font-manuale text-xl text-white">
+      <div class="bg-bgNavbar/70 w-[800px] h-[200px] flex flex-col gap-y-5 items-center justify-center font-lexend text-xl text-white">
         <p><span class="text-2xl font-bold">Awal</span> pergerakan: 1862</p>
         <p><span class="text-2xl font-bold">Akhir</span> pergerakan: 1892</p>
       </div>
@@ -259,7 +259,7 @@
   <div id="tab-open6" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex items-center justify-center">
-        <div class="overflow-y-auto text-white px-10 h-[280px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-10 h-[280px] font-lexend text-center text-lg">
           <p>Jadi ceritanya, setelah gerakan Impresionisme, para pengikutnya yang lebih muda tuh jadi terbagi-bagi ke berbagai arah gitu. Mereka bikin beberapa kelompok dan aliran, tapi sayangnya aliran-aliran itu cuma bertahan sebentar aja. Adapun beberapa pelukis dengan aliran yang fokus banget sama penggunaan warna dan sapuan kuas. Aliran ini cenderung menggambarkan kehidupan mental dan emosional sang pelukis, daripada cuma kesan optik aja kayak Monet dulu. Terus, di sisi lainnya, ada juga yang mencoba banget untuk formalin dan menyempurnakan teknik optik yang jadi dasar dari gaya Impresionis awal. Gerakan tersebut adalah gerakan aliran Ekspresionisme.</p> <br>
   
           <p>Cerita tentang Pasca-Impresionisme ini memang mulai berbaur sama cerita-cerita tentang gaya akhir abad ke-19 dan awal abad ke-20, yaitu saat Simbolisme dan Ekspresionisme. Terus, ada juga tanggapan lain lagi terhadap Impresionisme, yaitu para seniman Pointillisme, termasuk seniman Georges Seurat dan Paul Signac. Karya Pointillisme yang paling terkenal tuh, "A Sunday Afternoon on the Island of La Grande Jatte" yang dibikin oleh Seurat tahun 1884-86. Nah, karya Van Gogh yang unik, dengan sapuan kuasnya yang khas dan berulang-ulang dan bikin kamu terhipnotis gitu, bisa dibilang sebagai perpaduan antara kualitas gaya Pointillisme yang mencolok dan daya tarik emosional yang kuat dari pendekatan Cloisonnist-Synthetist.</p>
@@ -271,7 +271,7 @@
   <div id="tab-open-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-black px-5 h-[400px] font-manuale text-start text-lg">
+        <div class="overflow-y-auto text-black px-5 h-[400px] font-lexend text-start text-lg">
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Impresionisme itu pakai palet warna-warna ceria yang meledak-ledak! Mereka suka <span class="text-mainHeader text-xl font-extrabold">menggunakan warna-warna terang dan cerah</span> untuk menangkap cahaya alami yang indah. Bayangkan lukisan-lukisan dengan warna-warna yang menyilaukan mata!</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Mereka menggunakan sapuan kuas yang cepat dan bebas! Impresionisme suka <span class="text-mainHeader text-xl font-extrabold">menangkap momen dengan spontanitas</span>, jadi mereka sering menggunakan sapuan-sapuan kuas yang cepat dan energik. Ini memberikan kesan yang hidup dan bergerak pada lukisan-lukisan mereka.</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Mereka adalah pengagum cahaya alami dan atmosfer! Impresionisme suka menangkap efek cahaya matahari yang berkilauan dan atmosfer yang berubah-ubah. Mereka ingin menghadirkan kesan tentang bagaimana <span class="text-mainHeader text-xl font-extrabold">cahaya dan udara bisa memengaruhi suasana.</span></p><br>
@@ -293,7 +293,7 @@
   <div id="tab-open2-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg">
           <div class="container mx-auto my-8">
             <video id="customVideo-m" class="w-full h-52">
               <source src="{{ asset('assets/videos/impresionisme.mp4') }}" type="video/mp4">
@@ -313,7 +313,7 @@
   <div id="tab-open3-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70  w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg flex flex-col gap-y-5">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg flex flex-col gap-y-5">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/impresionisme/impresionisme-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -363,7 +363,7 @@
   <div id="tab-open4-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg flex flex-col gap-y-5">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg flex flex-col gap-y-5">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/impresionisme/impresionisme2-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -419,7 +419,7 @@
   </div>
   <div id="tab-open5-m" class="z-20 fixed hidden bottom-0 right-0 left-0">
     <div class="flex items-center justify-center w-full h-full bg-bgNavbar/70">
-      <div class="w-full h-[300px] flex flex-col gap-y-5 items-center justify-center font-manuale text-xl text-white">
+      <div class="w-full h-[300px] flex flex-col gap-y-5 items-center justify-center font-lexend text-xl text-white">
         <h2 class=""><span class="text-2xl font-bold">Awal</span> pergerakan: 1862</h2>
         <h2 class=""><span class="text-2xl font-bold">Akhir</span> pergerakan: 1892</h2>
       </div>
@@ -428,7 +428,7 @@
   <div id="tab-open6-m" class="z-20 fixed hidden bottom-0 right-0 left-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg">
           <p>Jadi ceritanya, setelah gerakan Impresionisme, para pengikutnya yang lebih muda tuh jadi terbagi-bagi ke berbagai arah gitu. Mereka bikin beberapa kelompok dan aliran, tapi sayangnya aliran-aliran itu cuma bertahan sebentar aja. Adapun beberapa pelukis dengan aliran yang fokus banget sama penggunaan warna dan sapuan kuas. Aliran ini cenderung menggambarkan kehidupan mental dan emosional sang pelukis, daripada cuma kesan optik aja kayak Monet dulu. Terus, di sisi lainnya, ada juga yang mencoba banget untuk formalin dan menyempurnakan teknik optik yang jadi dasar dari gaya Impresionis awal. Gerakan tersebut adalah gerakan aliran Ekspresionisme.</p> <br>
   
           <p>Cerita tentang Pasca-Impresionisme ini memang mulai berbaur sama cerita-cerita tentang gaya akhir abad ke-19 dan awal abad ke-20, yaitu saat Simbolisme dan Ekspresionisme. Terus, ada juga tanggapan lain lagi terhadap Impresionisme, yaitu para seniman Pointillisme, termasuk seniman Georges Seurat dan Paul Signac. Karya Pointillisme yang paling terkenal tuh, "A Sunday Afternoon on the Island of La Grande Jatte" yang dibikin oleh Seurat tahun 1884-86. Nah, karya Van Gogh yang unik, dengan sapuan kuasnya yang khas dan berulang-ulang dan bikin kamu terhipnotis gitu, bisa dibilang sebagai perpaduan antara kualitas gaya Pointillisme yang mencolok dan daya tarik emosional yang kuat dari pendekatan Cloisonnist-Synthetist.</p>

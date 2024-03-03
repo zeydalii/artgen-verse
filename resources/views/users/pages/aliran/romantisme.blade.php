@@ -12,13 +12,13 @@
 <div id="container" class="hidden">
   <div class="w-full flex items-center py-3 phone:py-0">
     <div class="w-full flex flex-col phone:flex-row gap-y-3 gap-x-5 justify-end">
-      <button class="font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/'">HOME</button>
-      <button class="hidden phone:block font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
+      <button class="font-montserrat text-phone phone:text-base font-bold bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/'">HOME</button>
+      <button class="hidden phone:block font-montserrat text-phone phone:text-base font-bold bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
     </div>
     <div class="phone:hidden w-full flex justify-center">
-      <button class="font-kronaOne text-phone phone:text-base bg-senimanBg p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
+      <button class="font-montserrat text-phone phone:text-base bg-senimanBg font-bold p-2 mx-auto phone:mx-0" onclick="location.href='/timeline'">TIMELINE</button>
     </div>
-    <h1 class="hidden phone:block w-full text-3xl phone:text-4xl font-kronaOne text-bgNavbar text-center"><span class="text-5xl phone:text-8xl">R</span>OMANTISME</h1>
+    <h1 class="hidden phone:block w-full text-3xl phone:text-5xl font-montserrat font-extrabold text-bgNavbar text-center"><span class="text-5xl phone:text-8xl">R</span>OMANTISME</h1>
     <div class="w-full flex justify-end phone:justify-start">
       <input id="playButton" type="hidden" value="PLAY" onclick="play()">
       <input id="pauseButton" type="hidden" value="PAUSE" onclick="pause()">
@@ -31,7 +31,7 @@
   </div>
   
   <div>
-    <h1 class="phone:hidden w-full text-3xl font-kronaOne text-bgNavbar text-center"><span class="text-5xl">R</span>OMANTISME</h1>
+    <h1 class="phone:hidden w-full text-3xl font-montserrat font-extrabold text-bgNavbar text-center"><span class="text-5xl">R</span>OMANTISME</h1>
   </div>
   
   <img src="{{ asset('assets/pecahan/ellipse1.png') }}" alt="" class="hidden phone:block absolute top-0 left-0 -z-20" draggable="false">
@@ -102,7 +102,7 @@
   <div id="tab-open" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-black px-10 h-[280px] font-manuale text-start text-lg">
+        <div class="overflow-y-auto text-black px-10 h-[280px] font-lexend text-start text-lg">
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Romantisisme itu seperti roller coaster emosi! Mereka suka <span class="text-mainHeader text-xl font-extrabold">mengekspresikan perasaan yang kuat</span>, mulai dari cinta yang membara hingga kepedihan yang mendalam. Jadi, bayangkan lukisan-lukisan yang penuh dengan drama dan ekspresi wajah yang mendalam.</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Romantisisme itu seperti membaca novel petualangan yang seru! Mereka suka menciptakan karya-karya yang penuh dengan misteri dan keajaiban. Jadi, bayangkan lukisan-lukisan dengan <span class="text-mainHeader text-xl font-extrabold">adegan-adegan yang menegangkan atau patung-patung yang memikat dengan tema-tema mitologis.</span></p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Romantisisme menggembar-gemborkan semangat kebebasan! Mereka mengagungkan ide-ide tentang <span class="text-mainHeader text-xl font-extrabold">kebebasan individual, kemandirian, dan pengorbanan</span>. Jadi, ketika Anda melihat karya seni Romantisisme, Anda bisa merasakan semangat pemberontakan dan keberanian.</p>
@@ -122,7 +122,7 @@
   <div id="tab-open2" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[420px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-10 h-[300px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-10 h-[300px] font-lexend text-center text-lg">
           <div class="container mx-auto my-8">
             <video id="customVideo" class="w-full h-52">
               <source src="{{ asset('assets/videos/romantisme.mp4') }}" type="video/mp4">
@@ -141,7 +141,7 @@
   <div id="tab-open3" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-16 h-[280px] font-manuale text-center text-lg flex flex-col gap-y-10">
+        <div class="overflow-y-auto text-white px-16 h-[280px] font-lexend text-center text-lg flex flex-col gap-y-10">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/romantisme/romantisme-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -184,7 +184,7 @@
   <div id="tab-open4" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-16 h-[280px] font-manuale text-center text-lg flex flex-col gap-y-10">
+        <div class="overflow-y-auto text-white px-16 h-[280px] font-lexend text-center text-lg flex flex-col gap-y-10">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/romantisme/romantisme2-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -226,7 +226,7 @@
   </div>
   <div id="tab-open5" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
-      <div class="bg-bgNavbar/70 w-[800px] h-[200px] flex flex-col gap-y-5 items-center justify-center font-manuale text-xl text-white">
+      <div class="bg-bgNavbar/70 w-[800px] h-[200px] flex flex-col gap-y-5 items-center justify-center font-lexend text-xl text-white">
         <p><span class="text-2xl font-bold">Awal</span> pergerakan: 1780</p>
         <p><span class="text-2xl font-bold">Akhir</span> pergerakan: 1830</p>
       </div>
@@ -235,7 +235,7 @@
   <div id="tab-open6" class="z-20 fixed hidden transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-[800px] h-[400px] flex items-center justify-center">
-        <div class="overflow-y-auto text-white px-10 h-[280px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-10 h-[280px] font-lexend text-center text-lg">
           <p>Gaya Romantisme mulai redup di berbagai tempat, tapi kalo masuk tahun 1830-an, ada hal baru yang mulai muncul. Nah, waktu itu fotografi lagi jadi tren dan kota-kota juga makin ramai dengan industri dan perkotaan, jadi seni mulai berubah ke arah yang lebih nyata, alias Realisme.</p><br>
   
           <p>Karya-karya dari seniman keren kayak Turner dan Delacroix dengan warna-warni kuat dari sapuan kuas mereka, akhirnya bikin banyak pengaruh buat perkembangan Impresionisme. Mereka lebih fokus pada warna daripada garis sebagai cara utama buat mengatur komposisi. Dan ini juga ngaruh banget buat perkembangan Neo-Impresionisme sama teori warna karya Georges Seurat, lo!</p>
@@ -247,7 +247,7 @@
   <div id="tab-open-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-black px-5 h-[400px] font-manuale text-start text-lg">
+        <div class="overflow-y-auto text-black px-5 h-[400px] font-lexend text-start text-lg">
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Romantisisme itu seperti roller coaster emosi! Mereka suka <span class="text-mainHeader text-xl font-extrabold">mengekspresikan perasaan yang kuat</span>, mulai dari cinta yang membara hingga kepedihan yang mendalam. Jadi, bayangkan lukisan-lukisan yang penuh dengan drama dan ekspresi wajah yang mendalam.</p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Romantisisme itu seperti membaca novel petualangan yang seru! Mereka suka menciptakan karya-karya yang penuh dengan misteri dan keajaiban. Jadi, bayangkan lukisan-lukisan dengan <span class="text-mainHeader text-xl font-extrabold">adegan-adegan yang menegangkan atau patung-patung yang memikat dengan tema-tema mitologis.</span></p><br>
           <p class="bg-senimanBg font-bold p-5 rounded-xl shadow-aliran">Romantisisme menggembar-gemborkan semangat kebebasan! Mereka mengagungkan ide-ide tentang <span class="text-mainHeader text-xl font-extrabold">kebebasan individual, kemandirian, dan pengorbanan</span>. Jadi, ketika Anda melihat karya seni Romantisisme, Anda bisa merasakan semangat pemberontakan dan keberanian.</p>
@@ -267,7 +267,7 @@
   <div id="tab-open2-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg">
           <div class="container mx-auto my-8">
             <video id="customVideo-m" class="w-full h-52">
               <source src="{{ asset('assets/videos/romantisme.mp4') }}" type="video/mp4">
@@ -286,7 +286,7 @@
   <div id="tab-open3-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70  w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg flex flex-col gap-y-5">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg flex flex-col gap-y-5">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/romantisme/romantisme-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -329,7 +329,7 @@
   <div id="tab-open4-m" class="z-20 fixed hidden bottom-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex flex-col gap-y-5 items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg flex flex-col gap-y-5">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg flex flex-col gap-y-5">
           <div class="flex gap-x-5 items-center">
             <img src="{{ asset('assets/romantisme/romantisme2-p1.jpg') }}" alt="" class="w-2/5" draggable="false">
             <div class="w-3/5">
@@ -371,7 +371,7 @@
   </div>
   <div id="tab-open5-m" class="z-20 fixed hidden bottom-0 right-0 left-0">
     <div class="flex items-center justify-center w-full h-full bg-bgNavbar/70">
-      <div class="w-full h-[300px] flex flex-col gap-y-5 items-center justify-center font-manuale text-xl text-white">
+      <div class="w-full h-[300px] flex flex-col gap-y-5 items-center justify-center font-lexend text-xl text-white">
         <h2 class=""><span class="text-2xl font-bold">Awal</span> pergerakan: 1780</h2>
         <h2 class=""><span class="text-2xl font-bold">Akhir</span> pergerakan: 1830</h2>
       </div>
@@ -380,7 +380,7 @@
   <div id="tab-open6-m" class="z-20 fixed hidden bottom-0 right-0 left-0">
     <div class="flex items-center justify-center w-full h-full">
       <div class="bg-bgNavbar/70 w-full h-[500px] flex items-center justify-center">
-        <div class="overflow-y-auto text-white px-5 h-[400px] font-manuale text-center text-lg">
+        <div class="overflow-y-auto text-white px-5 h-[400px] font-lexend text-center text-lg">
           <p>Gaya Romantisme mulai redup di berbagai tempat, tapi kalo masuk tahun 1830-an, ada hal baru yang mulai muncul. Nah, waktu itu fotografi lagi jadi tren dan kota-kota juga makin ramai dengan industri dan perkotaan, jadi seni mulai berubah ke arah yang lebih nyata, alias Realisme.</p><br>
   
           <p>Karya-karya dari seniman keren kayak Turner dan Delacroix dengan warna-warni kuat dari sapuan kuas mereka, akhirnya bikin banyak pengaruh buat perkembangan Impresionisme. Mereka lebih fokus pada warna daripada garis sebagai cara utama buat mengatur komposisi. Dan ini juga ngaruh banget buat perkembangan Neo-Impresionisme sama teori warna karya Georges Seurat, lo!</p>
