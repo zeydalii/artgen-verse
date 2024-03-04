@@ -17,7 +17,7 @@
       <h2 class="text-2xl phone:text-4xl font-extrabold">DI AREA TANTANGAN</h2>
       <div class="text-bgNavbar font-bold flex flex-col gap-y-10 mt-10">
         <button class="bg-senimanBg px-16 py-2 rounded-2xl" onclick="location.href='/first-test/area-1'">Petualang <br> Baru</button>
-        <button class="bg-senimanBg px-16 py-2 rounded-2xl">Akhir <br> Petualangan</button>
+        <button class="bg-senimanBg px-16 py-2 rounded-2xl" onclick="location.href='/last-test/area-1'">Akhir <br> Petualangan</button>
         <button class="bg-senimanBg px-16 py-2 rounded-2xl">Rapot <br> Petualangan</button>
       </div>
     </div>

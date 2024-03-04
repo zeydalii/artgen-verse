@@ -28,7 +28,7 @@
           </div>
           <input type="password" name="password" autocomplete="off" placeholder="Password" class="pl-16 pr-5 py-2.5 bg-white rounded-full placeholder-mainHeader focus:outline-none shadow-buttonSubmit">
         </div>
-        <button class="bg-bgNavbar px-12 py-3 rounded-full text-white mt-3 shadow-buttonSubmit">Sign In</button>
+        <button type="button" onclick="location.href='/area-tantangan'" class="bg-bgNavbar px-12 py-3 rounded-full text-white mt-3 shadow-buttonSubmit">Sign In</button>
       </form>
       <p class="font-bold">Belum menjadi Artgen Peaple?</p>
       <a href="/register" class="font-bold underline">Daftar disini!</a>

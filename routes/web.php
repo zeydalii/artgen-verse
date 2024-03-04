@@ -29,8 +29,40 @@ Route::get('/area-tantangan', function () {
     return view('users.pages.area-tantangan');
 });
 
+// FIRST TEST
+
 Route::get('/first-test/area-1', function () {
     return view('users.pages.first-test.area-1');
+});
+
+Route::get('/first-test/area-2', function () {
+    return view('users.pages.first-test.area-2');
+});
+
+Route::get('/first-test/area-3', function () {
+    return view('users.pages.first-test.area-3');
+});
+
+Route::get('/first-test/result', function () {
+    return view('users.pages.first-test.result');
+});
+
+// LAST TEST
+
+Route::get('/last-test/area-1', function () {
+    return view('users.pages.last-test.area-1');
+});
+
+Route::get('/last-test/area-2', function () {
+    return view('users.pages.last-test.area-2');
+});
+
+Route::get('/last-test/area-3', function () {
+    return view('users.pages.last-test.area-3');
+});
+
+Route::get('/last-test/result', function () {
+    return view('users.pages.last-test.result');
 });
 
 Route::get('/timeline', function () {
