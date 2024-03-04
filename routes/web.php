@@ -104,3 +104,15 @@ Route::get('/aliran/kubisme', function () {
 Route::get('/aliran/abstrak-ekspresionisme', function () {
     return view('users.pages.aliran.abstrak-ekspresionisme');
 });
+
+Route::get('/admin', function () {
+    return view('admin.pages.overviews');
+});
+
+Route::get('/admin/users', function () {
+    return view('admin.pages.users');
+});
+
+Route::get('/admin/scores', function () {
+    return view('admin.pages.scores');
+});

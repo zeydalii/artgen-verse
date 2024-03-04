@@ -22,6 +22,8 @@ export default {
         kubisme2: "#210D38",
         navbarHover: "#977E2B",
         senimanBg: "#D9D9D9",
+        adminMain: "#1A1C1E",
+        navbarActive: "#3E4350",
       },
       fontFamily: {
         jomhuria: ["Jomhuria", "serif"],
@@ -31,6 +33,7 @@ export default {
         manuale: ["Manuale", "serif"],
         montserrat: ["Montserrat Alternates", "sans-serif"],
         lexend: ["Lexend", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       blur: {
         opening: "200px",
