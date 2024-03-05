@@ -532,7 +532,11 @@
           <div id="dropdown3" class="hidden absolute z-10 mt-2 -ml-32 phone:-ml-0 w-52 origin-top-right rounded-md bg-mainHeader shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
             <div class="py-3 px-3 text-center font-extrabold" role="none">
               <a href="https://drive.google.com/file/d/1BS58iGIqXonvu3Fdip147M9jmj6nPcWN/view?usp=drive_link" class="text-black bg-senimanBg rounded-xl block px-3 py-3 text-md underline" role="menuitem" tabindex="-1" id="menu-item-0">APA ITU SENI?</a>
+              @auth
+              <a href="/area-tantangan" class="text-black bg-senimanBg rounded-xl block px-3 py-3 text-md my-2" role="menuitem" tabindex="-1" id="menu-item-1">Petualangan Seni</a>
+              @else
               <a href="/login" class="text-black bg-senimanBg rounded-xl block px-3 py-3 text-md my-2" role="menuitem" tabindex="-1" id="menu-item-1">Petualangan Seni</a>
+              @endauth
               <div>
                 <button id="dropdown-button2" class="text-black bg-senimanBg rounded-xl block px-3 py-3 text-md my-2" role="menuitem" tabindex="-1">Tujuan Petualangan</button>
                 <div id="dropdown-open2" class="hidden absolute z-20 mt-2 -ml-[110px] phone:-mt-10 phone:-ml-[320px] w-[300px] origin-top-right rounded-md bg-bgNavbar shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">

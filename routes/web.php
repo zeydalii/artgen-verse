@@ -4,6 +4,8 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdminLoginController;
 use App\Http\Controllers\AdminRegisterController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\UserLoginController;
+use App\Http\Controllers\UserRegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,13 +23,12 @@ Route::get('/', function () {
     return view('users.main');
 });
 
-Route::get('/login', function () {
-    return view('users.pages.login');
-});
+Route::get('/login', [UserLoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [UserLoginController::class, 'authenticate'])->middleware('guest');
+Route::post('/logout', [UserLoginController::class, 'logout'])->middleware('auth');
 
-Route::get('/register', function () {
-    return view('users.pages.register');
-});
+Route::get('/register', [UserRegisterController::class, 'index'])->name('register')->middleware('guest');
+Route::post('/register', [UserRegisterController::class, 'store'])->middleware('guest');
 
 Route::get('/area-tantangan', function () {
     return view('users.pages.area-tantangan');
@@ -114,7 +115,7 @@ Route::get('/aliran/abstrak-ekspresionisme', function () {
 
 Route::get('/admin/login', [AdminLoginController::class, 'index'])->name('login-admin')->middleware('guest');
 Route::post('/admin/login', [AdminLoginController::class, 'authenticate'])->middleware('guest');
-Route::post('/admin/logout', [AdminLoginController::class, 'logout'])->middleware('auth');
+Route::post('/admin/logout', [AdminLoginController::class, 'logout'])->middleware(['auth', 'admin']);
 
 Route::get('/admin/register', [AdminRegisterController::class, 'index'])->name('register-admin')->middleware('guest');
 Route::post('/admin/register', [AdminRegisterController::class, 'store'])->middleware('guest');
@@ -132,10 +133,6 @@ Route::get('/admin/users', [UserController::class, 'index'])->middleware(['auth'
 Route::post('/admin/users', [UserController::class, 'store'])->middleware(['auth', 'admin']);
 Route::put('/admin/users/{id}', [UserController::class, 'update'])->middleware(['auth', 'admin']);
 Route::delete('/admin/users/{id}', [UserController::class, 'destroy'])->middleware(['auth', 'admin']);
-
-// Route::get('/admin/users', function () {
-//     return view('admin.pages.users');
-// });
 
 Route::get('/admin/scores', function () {
     return view('admin.pages.scores');

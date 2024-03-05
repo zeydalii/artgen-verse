@@ -20,6 +20,10 @@
         <button class="bg-senimanBg px-16 py-2 rounded-2xl" onclick="location.href='/last-test/area-1'">Akhir <br> Petualangan</button>
         <button class="bg-senimanBg px-16 py-2 rounded-2xl">Rapot <br> Petualangan</button>
       </div>
+      <form action="/logout" method="POST">
+        @csrf
+        <button type="submit" class="font-bold underline mt-10">Logout</button>
+      </form>
     </div>
   </div>
 </div>
