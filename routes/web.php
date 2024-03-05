@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminLoginController;
+use App\Http\Controllers\AdminRegisterController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -105,13 +109,33 @@ Route::get('/aliran/abstrak-ekspresionisme', function () {
     return view('users.pages.aliran.abstrak-ekspresionisme');
 });
 
+
+// ADMINISTRATOR
+
+Route::get('/admin/login', [AdminLoginController::class, 'index'])->name('login-admin')->middleware('guest');
+Route::post('/admin/login', [AdminLoginController::class, 'authenticate'])->middleware('guest');
+Route::post('/admin/logout', [AdminLoginController::class, 'logout'])->middleware('auth');
+
+Route::get('/admin/register', [AdminRegisterController::class, 'index'])->name('register-admin')->middleware('guest');
+Route::post('/admin/register', [AdminRegisterController::class, 'store'])->middleware('guest');
+
 Route::get('/admin', function () {
     return view('admin.pages.overviews');
-});
+})->middleware(['auth', 'admin']);
 
-Route::get('/admin/users', function () {
-    return view('admin.pages.users');
-});
+Route::get('/admin/admins', [AdminController::class, 'index'])->middleware(['auth', 'admin']);
+Route::post('/admin/admins', [AdminController::class, 'store'])->middleware(['auth', 'admin']);
+Route::put('/admin/admins/{id}', [AdminController::class, 'update'])->middleware(['auth', 'admin']);
+Route::delete('/admin/admins/{id}', [AdminController::class, 'destroy'])->middleware(['auth', 'admin']);
+
+Route::get('/admin/users', [UserController::class, 'index'])->middleware(['auth', 'admin']);
+Route::post('/admin/users', [UserController::class, 'store'])->middleware(['auth', 'admin']);
+Route::put('/admin/users/{id}', [UserController::class, 'update'])->middleware(['auth', 'admin']);
+Route::delete('/admin/users/{id}', [UserController::class, 'destroy'])->middleware(['auth', 'admin']);
+
+// Route::get('/admin/users', function () {
+//     return view('admin.pages.users');
+// });
 
 Route::get('/admin/scores', function () {
     return view('admin.pages.scores');

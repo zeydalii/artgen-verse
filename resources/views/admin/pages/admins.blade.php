@@ -7,14 +7,14 @@
   <div class="bg-white rounded-2xl h-[calc(100vh-40px)] w-full p-10">
     <div class="border border-gray-200 rounded-xl px-5 py-2 flex flex-col">
       <div class="flex justify-between items-center pb-2">
-        <h2 class="text-[35px] font-[500]">Data user</h2>
+        <h2 class="text-[35px] font-[500]">Data admin</h2>
         <button id="addDialogButton" class="border border-gray-200 rounded-lg px-2 py-1 flex items-center gap-x-1 font-[500] hover:bg-gray-100 transition duration-300">
           <p class="">Tambah baru</p>
           <p class="text-2xl">+</p>
         </button>
       </div>
       <div class="flex justify-end border-t border-gray-200 pt-3 pb-1">
-        <form action="/admin/users" method="GET" class="flex items-center mb-[1px]">
+        <form action="/admin/admins" method="GET" class="flex items-center mb-[1px]">
           <input type="text" name="search" autocomplete="off" placeholder="Search" class="focus:outline-none p-2 border border-gray-200 rounded-l-lg" value="{{ request('search') }}">
           <button type="submit" class="px-2 py-3 rounded-r-lg border border-l-0 border-gray-200 hover:bg-gray-100 transition duration-300"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
@@ -63,21 +63,21 @@
           <th class="text-start w-2/12">Tanggal Ditambahkan</th>
           <th class="w-2/12">Aksi</th>
         </tr>
-        @if ($users->count() > 0)
-          @foreach($users as $user)
+        @if ($admins->count() > 0)
+          @foreach($admins as $admin)
             <tr class="border-t">
               <td class="px-4 py-3">{{ $loop->index + 1 }}</td>
-              <td>{{ $user->username }}</td>
-              <td class="text-gray-400">{{ $user->nama_lengkap }}</td>
-              <td class="text-gray-400">{{ \Carbon\Carbon::parse($user->created_at)->locale('id')->isoFormat('MMMM D, YYYY') }}</td>
+              <td>{{ $admin->username }}</td>
+              <td class="text-gray-400">{{ $admin->nama_lengkap }}</td>
+              <td class="text-gray-400">{{ \Carbon\Carbon::parse($admin->created_at)->locale('id')->isoFormat('MMMM D, YYYY') }}</td>
               <td class="text-center">
                 <button class="editDialogButton mr-2 hover:text-blue-400 transition duration-300" 
-                  data-id="{{ $user->id }}"
-                  data-username="{{ $user->username }}"
-                  data-nama-lengkap="{{ $user->nama_lengkap }}"
+                  data-id="{{ $admin->id }}"
+                  data-username="{{ $admin->username }}"
+                  data-nama-lengkap="{{ $admin->nama_lengkap }}"
                 ><i class="fa-solid fa-pen"></i></button>
                 <button class="deleteDialogButton ml-2 hover:text-red-400 transition duration-300" 
-                  data-id="{{ $user->id }}"
+                  data-id="{{ $admin->id }}"
                 ><i class="fa-solid fa-trash-can"></i></button>
               </td>
             </tr>
@@ -98,8 +98,8 @@
   <div id="bg-blur" class="absolute hidden z-10 bg-black/45 top-4 right-4 left-0 bottom-4 rounded-2xl"></div>
 
   <div id="add-box-open" class="absolute hidden z-20 w-[500px] h-[450px] bg-white rounded-xl px-7 py-5 border-2 shadow-md">
-    <h2 class="text-[25px] font-[500] border-b pb-3">Tambah user</h2>
-    <form action="/admin/users" method="POST" class="flex flex-col gap-y-5 mt-5">
+    <h2 class="text-[25px] font-[500] border-b pb-3">Tambah admin</h2>
+    <form action="/admin/admins" method="POST" class="flex flex-col gap-y-5 mt-5">
       @csrf
       <div class="flex flex-col gap-y-2">
         <label for="username">Username <span class="text-red-500">*</span></label>
@@ -122,7 +122,7 @@
 
   <div class="bg-editBlur absolute hidden z-10 bg-black/45 top-4 right-4 left-0 bottom-4 rounded-2xl justify-center items-center">
     <div class="edit-box-open absolute hidden z-20 w-[500px] h-[450px] bg-white rounded-xl px-7 py-5 border-2 shadow-md">
-      <h2 class="text-[25px] font-[500] border-b pb-3">Edit user</h2>
+      <h2 class="text-[25px] font-[500] border-b pb-3">Edit admin</h2>
       <form id="editForm" method="POST" class="flex flex-col gap-y-5 mt-5">
         @method('PUT')
         @csrf
@@ -148,7 +148,7 @@
 
   <div class="bg-deleteBlur absolute hidden z-10 bg-black/45 top-4 right-4 left-0 bottom-4 rounded-2xl justify-center items-center">
     <div class="delete-box-open absolute hidden z-20 w-[500px] h-[210px] bg-white rounded-xl px-7 py-5 border-2 shadow-md">
-      <h2 class="text-[25px] font-[500] border-b pb-3">Hapus user</h2>
+      <h2 class="text-[25px] font-[500] border-b pb-3">Hapus admin</h2>
       <form id="deleteForm" method="POST" class="flex flex-col gap-y-5 mt-5">
         @method('DELETE')
         @csrf
@@ -160,7 +160,7 @@
       </form>
     </div>
   </div>
-
+  
 </div>
 
 @endsection
@@ -224,7 +224,7 @@
           document.getElementById('edit-username').value = username;
           document.getElementById('edit-nama_lengkap').value = namaLengkap;
 
-          document.getElementById('editForm').action = '/admin/users/' + userId;
+          document.getElementById('editForm').action = '/admin/admins/' + userId;
 
           boxOpen.classList.remove('hidden');
           button.setAttribute('aria-expanded', 'true');
@@ -271,7 +271,7 @@
         } else {
           const userId = button.getAttribute('data-id');
 
-          document.getElementById('deleteForm').action = '/admin/users/' + userId;
+          document.getElementById('deleteForm').action = '/admin/admins/' + userId;
 
           boxOpen.classList.remove('hidden');
           button.setAttribute('aria-expanded', 'true');
