@@ -1,7 +1,6 @@
 @extends('users.partials.master')
 @section('content')
 
-
 <div class="w-full h-screen bg-mainHeader flex justify-center items-center font-montserrat">
   <img src="{{ asset('assets/pecahan/confetti.png') }}" alt="" class="phone:hidden w-full absolute top-20 right-0 z-10" draggable="false">
 
@@ -16,7 +15,7 @@
         <p class="text-xl">Your Score</p>
         <div class="relative w-36 mt-3 mb-2">
           <img src="{{ asset('assets/pecahan/result-box.png') }}" alt="" class="w-full" draggable="false">
-          <p class="w-full h-full text-2xl absolute bottom-0 flex justify-center items-center text-mainHeader font-extrabold">1300</p>
+          <p class="w-full h-full text-2xl absolute bottom-0 flex justify-center items-center text-mainHeader font-extrabold">{{ $skorTotal }}</p>
         </div>
         <p class="text-sm"><span class="text-[#FFCD26]">Perfect target:</span> 1500</p>
       </div>

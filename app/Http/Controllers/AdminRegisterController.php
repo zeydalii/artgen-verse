@@ -30,6 +30,8 @@ class AdminRegisterController extends Controller
             $user->username = $validatedData['username'];
             $user->nama_lengkap = $validatedData['nama_lengkap'];
             $user->password = $validatedData['password'];
+            $user->first_test = 0;
+            $user->last_test = 0;
             $user->role = "Admin";
     
             $user->save();

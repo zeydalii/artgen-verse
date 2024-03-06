@@ -3,6 +3,8 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdminLoginController;
 use App\Http\Controllers\AdminRegisterController;
+use App\Http\Controllers\FirstTestController;
+use App\Http\Controllers\ScoreController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserLoginController;
 use App\Http\Controllers\UserRegisterController;
@@ -32,25 +34,22 @@ Route::post('/register', [UserRegisterController::class, 'store'])->middleware('
 
 Route::get('/area-tantangan', function () {
     return view('users.pages.area-tantangan');
-});
+})->middleware(['userAuth', 'user']);
 
 // FIRST TEST
 
-Route::get('/first-test/area-1', function () {
-    return view('users.pages.first-test.area-1');
-});
+Route::get('/first-test/area-1', [FirstTestController::class, 'area1'])->middleware(['userAuth', 'user']);
+Route::post('/first-test/area-1', [FirstTestController::class, 'store1'])->middleware(['userAuth', 'user']);
 
-Route::get('/first-test/area-2', function () {
-    return view('users.pages.first-test.area-2');
-});
+Route::get('/first-test/area-2', [FirstTestController::class, 'area2'])->middleware(['userAuth', 'user']);
+Route::post('/first-test/area-2', [FirstTestController::class, 'store2'])->middleware(['userAuth', 'user']);
 
-Route::get('/first-test/area-3', function () {
-    return view('users.pages.first-test.area-3');
-});
+Route::get('/first-test/area-3', [FirstTestController::class, 'area3'])->middleware(['userAuth', 'user']);
+Route::post('/first-test/area-3', [FirstTestController::class, 'store3'])->middleware(['userAuth', 'user']);
 
-Route::get('/first-test/result', function () {
-    return view('users.pages.first-test.result');
-});
+Route::post('/first-test/submit', [FirstTestController::class, 'testSubmit'])->middleware(['userAuth', 'user']);
+
+Route::get('/first-test/result', [FirstTestController::class, 'result'])->middleware(['userAuth', 'user']);
 
 // LAST TEST
 
@@ -134,6 +133,4 @@ Route::post('/admin/users', [UserController::class, 'store'])->middleware(['auth
 Route::put('/admin/users/{id}', [UserController::class, 'update'])->middleware(['auth', 'admin']);
 Route::delete('/admin/users/{id}', [UserController::class, 'destroy'])->middleware(['auth', 'admin']);
 
-Route::get('/admin/scores', function () {
-    return view('admin.pages.scores');
-});
+Route::get('/admin/scores', [ScoreController::class, 'index'])->middleware(['auth', 'admin']);

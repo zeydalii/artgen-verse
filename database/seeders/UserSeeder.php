@@ -18,6 +18,8 @@ class UserSeeder extends Seeder
             'nama_lengkap' => 'Zeyd Ali',
             'role' => 'Admin',
             'password' => bcrypt('123'),
+            'first_test' => 0,
+            'last_test' => 0,
         ]);
 
         User::create([
@@ -25,6 +27,8 @@ class UserSeeder extends Seeder
             'nama_lengkap' => 'User 1',
             'role' => 'User',
             'password' => bcrypt('123'),
+            'first_test' => 0,
+            'last_test' => 0,
         ]);
     }
 }

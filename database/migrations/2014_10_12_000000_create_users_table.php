@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('nama_lengkap');
             $table->string('role');
             $table->string('password');
+            $table->boolean('first_test');
+            $table->boolean('last_test');
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();

@@ -16,8 +16,16 @@
       <h2 class="text-2xl phone:text-4xl font-extrabold">SELAMAT DATANG</h2>
       <h2 class="text-2xl phone:text-4xl font-extrabold">DI AREA TANTANGAN</h2>
       <div class="text-bgNavbar font-bold flex flex-col gap-y-10 mt-10">
-        <button class="bg-senimanBg px-16 py-2 rounded-2xl" onclick="location.href='/first-test/area-1'">Petualang <br> Baru</button>
-        <button class="bg-senimanBg px-16 py-2 rounded-2xl" onclick="location.href='/last-test/area-1'">Akhir <br> Petualangan</button>
+        @if (auth()->user()->first_test === 0)
+          <button class="bg-senimanBg px-16 py-2 rounded-2xl" onclick="location.href='/first-test/area-1'">Petualang <br> Baru</button>
+        @else
+          <p class="bg-senimanBg/35 px-16 py-2 rounded-2xl flex justify-center items-center text-center">Petualang <br> Baru</p>
+        @endif
+        @if (auth()->user()->first_test === 1 && auth()->user()->last_test === 0)
+          <button class="bg-senimanBg px-16 py-2 rounded-2xl" onclick="location.href='/last-test/area-1'">Akhir <br> Petualangan</button>
+        @else
+          <p class="bg-senimanBg/35 px-16 py-2 rounded-2xl flex justify-center items-center text-center">Petualang <br> Baru</p>
+        @endif
         <button class="bg-senimanBg px-16 py-2 rounded-2xl">Rapot <br> Petualangan</button>
       </div>
       <form action="/logout" method="POST">
