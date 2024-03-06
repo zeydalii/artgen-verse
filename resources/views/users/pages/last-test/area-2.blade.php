@@ -17,52 +17,55 @@
       <p class="text-xs">YANG MELUKIS KARYA YANG AKAN DITUNJUKKAN!</p>
     </div>
 
-    <div class="w-[400px] flex flex-col gap-y-10 items-center justify-center">
-      <img src="{{ asset('assets/test/last/salvador-art1.jpg') }}" alt="" class="w-[250px] phone:w-[300px] rounded-xl" draggable="false">
-      <div class="flex justify-center w-full gap-x-8 phone:gap-x-20 text-black text-xs">
-        <button class="bg-senimanBg h-[70px] w-[150px] phone:w-[300px] rounded-xl">SALVADOR DALI</button>
-        <button class="bg-senimanBg h-[70px] w-[150px] phone:w-[300px] rounded-xl">VAN GOGH</button>
-      </div>
-    </div>
-
-    <div class="w-[400px] flex flex-col gap-y-10 items-center justify-center mt-12">
-      <img src="{{ asset('assets/test/last/ekspresionisme2-p2.jpg') }}" alt="" class="w-[250px] phone:w-[300px] rounded-xl" draggable="false">
-      <div class="flex justify-center w-full gap-x-8 phone:gap-x-20 text-black text-xs">
-        <button class="bg-senimanBg h-[70px] w-[150px] phone:w-[300px] rounded-xl">VAN GOGH</button>
-        <button class="bg-senimanBg h-[70px] w-[150px] phone:w-[300px] rounded-xl">EDVARD MUNCH</button>
-      </div>
-    </div>
-
-    <div class="w-[400px] flex flex-col gap-y-10 items-center justify-center mt-12">
-      <img src="{{ asset('assets/test/last/kontemporer-1.png') }}" alt="" class="w-[250px] phone:w-[300px] rounded-xl" draggable="false">
-      <div class="flex justify-center w-full gap-x-8 phone:gap-x-20 text-black text-xs">
-        <button class="bg-senimanBg h-[70px] w-[150px] phone:w-[300px] rounded-xl">YAYOI KUSAMA</button>
-        <button class="bg-senimanBg h-[70px] w-[150px] phone:w-[300px] rounded-xl">AFFANDI</button>
-      </div>
-    </div>
-
-    <div class="w-[400px] flex flex-col gap-y-10 items-center justify-center mt-12">
-      <img src="{{ asset('assets/test/last/leonardo-art5.jpg') }}" alt="" class="w-[250px] phone:w-[300px] rounded-xl" draggable="false">
-      <div class="flex justify-center w-full gap-x-8 phone:gap-x-20 text-black text-xs">
-        <button class="bg-senimanBg h-[70px] w-[150px] phone:w-[300px] rounded-xl">LEONARDO DA VINCI</button>
-        <button class="bg-senimanBg h-[70px] w-[150px] phone:w-[300px] rounded-xl">PICASSO</button>
-      </div>
-    </div>
-
-    <div class="w-[400px] flex flex-col gap-y-10 items-center justify-center mt-12">
-      <img src="{{ asset('assets/test/last/affandi-art3.jpg') }}" alt="" class="w-[250px] phone:w-[300px] rounded-xl" draggable="false">
-      <div class="flex justify-center w-full gap-x-8 phone:gap-x-20 text-black text-xs">
-        <button class="bg-senimanBg h-[70px] w-[150px] phone:w-[300px] rounded-xl">AFFANDI</button>
-        <button class="bg-senimanBg h-[70px] w-[150px] phone:w-[300px] rounded-xl">RADEN SALEH</button>
-      </div>
-    </div>
+    @foreach($questions as $question)
+      <form action="/last-test/area-2" method="POST">
+        @csrf
+        <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
+        <input type="hidden" name="question_id" value="{{ $question->id }}">
+        <div class="w-[400px] flex flex-col gap-y-10 items-center justify-center mt-12">
+          <img src="{{ asset( $question->soal ) }}" alt="" class="w-[250px] phone:w-[300px] rounded-xl" draggable="false">
+          <div class="flex justify-center w-full gap-x-8 phone:gap-x-20 text-black text-xs">
+            @php
+              $userTestsForQuestion = $userTests[$question->id][$userAuth->id] ?? [];
+              $isAnswered = count($userTestsForQuestion) > 0;
+              $skorTmp = $isAnswered ? collect($userTestsForQuestion)->first()->skor_tmp : null;
+              $skorBenar = $skorTmp === 100;
+              $skorSalah = $skorTmp === 0;
+            @endphp
+            @if($isAnswered)
+              @if($skorBenar)
+                @foreach($question->answers as $answer)
+                  <p class="{{ $skorBenar && $answer->benar ? 'bg-green-500 scale-110 text-white' : 'bg-red-800 scale-90 text-white/40' }} h-[70px] w-[150px] phone:w-[300px] rounded-xl uppercase flex justify-center items-center text-center">
+                    {{ $answer->jawaban }}
+                  </p>
+                @endforeach
+              @else
+                @foreach($question->answers as $answer)
+                  <p class="{{ $skorSalah && !$answer->benar ? 'bg-red-500 scale-110 text-white' : 'bg-green-800 scale-90 text-white/40' }} h-[70px] w-[150px] phone:w-[300px] rounded-xl uppercase flex justify-center items-center text-center">
+                    {{ $answer->jawaban }}
+                  </p>
+                @endforeach
+              @endif
+            @else
+              @foreach($question->answers as $answer)
+                <button type="submit" name="selected_answer" value="{{ $answer->jawaban }}" class="bg-senimanBg h-[70px] w-[150px] phone:w-[300px] rounded-xl uppercase">
+                  {{ $answer->jawaban }}
+                </button>
+              @endforeach
+            @endif
+          </div>
+        </div>
+      </form>
+    @endforeach
   </div>
 
-  <div class="flex justify-center items-center z-20 fixed bottom-0 text-white font-bold w-full py-2">
-    <button onclick="location.href='/last-test/area-3'">
-      <img src="{{ asset('assets/pecahan/next-icon.png') }}" alt="" class="w-20" draggable="false">
-    </button>
-  </div>
+  @if(count($userTests2) == 10)
+    <div class="flex justify-center items-center z-20 fixed bottom-0 text-white font-bold w-full py-2">
+      <button onclick="location.href='/last-test/area-3'">
+        <img src="{{ asset('assets/pecahan/next-icon.png') }}" alt="" class="w-20" draggable="false">
+      </button>
+    </div>
+  @endif
 </div>
 
 @endsection

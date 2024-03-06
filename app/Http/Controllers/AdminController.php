@@ -14,6 +14,8 @@ class AdminController extends Controller
         $search = $request->input('search');
         $query = User::where('role', 'Admin');
 
+        $pagination = 10;
+
         if ($search) {
             $query->where(function ($query) use ($search) {
                 $query->where('username', 'LIKE', '%' . $search . '%')
@@ -21,9 +23,9 @@ class AdminController extends Controller
             });
         }
 
-        $admins = $query->paginate(10);
+        $admins = $query->paginate($pagination);
 
-        return view('admin.pages.admins', compact('admins', 'search'));
+        return view('admin.pages.admins', compact('admins', 'search'))->with('i', ($request->input('page', 1) - 1) * $pagination);
     }
 
     public function store(Request $request)
@@ -42,6 +44,8 @@ class AdminController extends Controller
             $user->username = $validatedData['username'];
             $user->nama_lengkap = $validatedData['nama_lengkap'];
             $user->password = $validatedData['password'];
+            $user->first_test = 0;
+            $user->last_test = 0;
             $user->role = "Admin";
     
             $user->save();
@@ -76,6 +80,8 @@ class AdminController extends Controller
             $validatedData = $request->validate($rules);
 
             $user->nama_lengkap = $validatedData['nama_lengkap'];
+            $user->first_test = 0;
+            $user->last_test = 0;
             $user->role = "Admin";
 
             $user->username = $validatedData['username'] ?? $user->username;

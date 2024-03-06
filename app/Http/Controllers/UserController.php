@@ -13,6 +13,8 @@ class UserController extends Controller
         $search = $request->input('search');
         $query = User::where('role', 'User');
 
+        $pagination = 10;
+
         if ($search) {
             $query->where(function ($query) use ($search) {
                 $query->where('username', 'LIKE', '%' . $search . '%')
@@ -20,9 +22,9 @@ class UserController extends Controller
             });
         }
 
-        $users = $query->paginate(10);
+        $users = $query->paginate($pagination);
 
-        return view('admin.pages.users', compact('users', 'search'));
+        return view('admin.pages.users', compact('users', 'search'))->with('i', ($request->input('page', 1) - 1) * $pagination);
     }
 
     public function store(Request $request)
@@ -41,6 +43,8 @@ class UserController extends Controller
             $user->username = $validatedData['username'];
             $user->nama_lengkap = $validatedData['nama_lengkap'];
             $user->password = $validatedData['password'];
+            $user->first_test = 0;
+            $user->last_test = 0;
             $user->role = "User";
     
             $user->save();
@@ -75,6 +79,8 @@ class UserController extends Controller
             $validatedData = $request->validate($rules);
 
             $user->nama_lengkap = $validatedData['nama_lengkap'];
+            $user->first_test = 0;
+            $user->last_test = 0;
             $user->role = "User";
 
             $user->username = $validatedData['username'] ?? $user->username;

@@ -66,7 +66,7 @@
         @if ($users->count() > 0)
           @foreach($users as $user)
             <tr class="border-t">
-              <td class="px-4 py-3">{{ $loop->index + 1 }}</td>
+              <td class="px-4 py-3">{{ ++$i }}</td>
               <td>{{ $user->username }}</td>
               <td class="text-gray-400">{{ $user->nama_lengkap }}</td>
               <td class="text-gray-400">{{ \Carbon\Carbon::parse($user->created_at)->locale('id')->isoFormat('MMMM D, YYYY') }}</td>
@@ -93,6 +93,10 @@
         @endif
       </table>
     </div>
+
+    <div class="text-gray-600 dark:text-gray-400 bg-secondary-50 dark:bg-secondary-900">
+			{{ $users->appends(['search' => $search])->links() }}
+		</div>
   </div>
 
   <div id="bg-blur" class="absolute hidden z-10 bg-black/45 top-4 right-4 left-0 bottom-4 rounded-2xl"></div>

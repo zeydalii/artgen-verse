@@ -128,7 +128,7 @@ class QuestionSeeder extends Seeder
         ]);
 
         Question::create([
-            'soal' => 'assets/test/last/romantisme2-p5.jpgg',
+            'soal' => 'assets/test/last/romantisme2-p5.jpg',
             'area' => '1',
             'tes_ke' => '2',
         ]);

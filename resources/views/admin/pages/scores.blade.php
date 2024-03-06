@@ -31,7 +31,7 @@
         @if ($scores->count() > 0)
           @foreach($scores as $score)
             <tr class="border-t">
-              <td class="px-4 py-3">{{ $loop->index + 1 }}</td>
+              <td class="px-4 py-3">{{ ++$i }}</td>
               <td>{{ $score->user->username }}</td>
               <td class="text-gray-400">{{ $score->user->nama_lengkap }}</td>
               <td class="text-gray-400">{{ \Carbon\Carbon::parse($score->created_at)->locale('id')->isoFormat('MMMM D, YYYY') }}</td>
@@ -51,6 +51,10 @@
         @endif
       </table>
     </div>
+
+    <div class="text-gray-600 dark:text-gray-400 bg-secondary-50 dark:bg-secondary-900">
+			{{ $scores->appends(['search' => $search])->links() }}
+		</div>
   </div>
 </div>
 

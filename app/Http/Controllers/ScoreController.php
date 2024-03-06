@@ -12,6 +12,8 @@ class ScoreController extends Controller
         $search = $request->input('search');
         $query = Score::query();
 
+        $pagination = 10;
+
         if ($search) {
             $query->where(function ($query) use ($search) {
                 $query->where('skor_total', 'LIKE', '%' . $search . '%')
@@ -24,8 +26,8 @@ class ScoreController extends Controller
             });
         }
 
-        $scores = $query->with('user')->paginate(10);
+        $scores = $query->with('user')->paginate($pagination);
 
-        return view('admin.pages.scores', compact('scores', 'search'));
+        return view('admin.pages.scores', compact('scores', 'search'))->with('i', ($request->input('page', 1) - 1) * $pagination);
     }
 }

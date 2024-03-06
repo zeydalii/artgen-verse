@@ -16,7 +16,7 @@
         <p class="text-xl">Your Score</p>
         <div class="relative w-36 mt-3 mb-2">
           <img src="{{ asset('assets/pecahan/result-box.png') }}" alt="" class="w-full" draggable="false">
-          <p class="w-full h-full text-2xl absolute bottom-0 flex justify-center items-center text-mainHeader font-extrabold">1300</p>
+          <p class="w-full h-full text-2xl absolute bottom-0 flex justify-center items-center text-mainHeader font-extrabold">{{ $skorTotal }}</p>
         </div>
         <p class="text-sm"><span class="text-[#FFCD26]">Perfect target:</span> 1500</p>
       </div>

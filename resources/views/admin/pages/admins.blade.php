@@ -66,7 +66,7 @@
         @if ($admins->count() > 0)
           @foreach($admins as $admin)
             <tr class="border-t">
-              <td class="px-4 py-3">{{ $loop->index + 1 }}</td>
+              <td class="px-4 py-3">{{ ++$i }}</td>
               <td>{{ $admin->username }}</td>
               <td class="text-gray-400">{{ $admin->nama_lengkap }}</td>
               <td class="text-gray-400">{{ \Carbon\Carbon::parse($admin->created_at)->locale('id')->isoFormat('MMMM D, YYYY') }}</td>
@@ -93,6 +93,10 @@
         @endif
       </table>
     </div>
+
+    <div class="text-gray-600 dark:text-gray-400 bg-secondary-50 dark:bg-secondary-900">
+			{{ $admins->appends(['search' => $search])->links() }}
+		</div>
   </div>
 
   <div id="bg-blur" class="absolute hidden z-10 bg-black/45 top-4 right-4 left-0 bottom-4 rounded-2xl"></div>

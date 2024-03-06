@@ -11,13 +11,13 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
-class FirstTestController extends Controller
+class LastTestController extends Controller
 {
     public function area1()
     {
         $userAuth = Auth::user();
 
-        $questions = Question::where('area', '1')->where('tes_ke', '1')->get();
+        $questions = Question::where('area', '1')->where('tes_ke', '2')->get();
 
         $userTests = [];
         foreach ($questions as $question) {
@@ -27,7 +27,7 @@ class FirstTestController extends Controller
             }
         }
 
-        return view('users.pages.first-test.area-1', compact('questions', 'userTests', 'userAuth'));
+        return view('users.pages.last-test.area-1', compact('questions', 'userTests', 'userAuth'));
     }
 
     public function store1(Request $request)
@@ -55,7 +55,7 @@ class FirstTestController extends Controller
     
             $test->save();
     
-            return redirect('/first-test/area-1');
+            return redirect('/last-test/area-1');
         } catch (\Exception $e) {
             DB::rollback();
             // dd($e->getMessage());
@@ -67,7 +67,7 @@ class FirstTestController extends Controller
     {
         $userAuth = Auth::user();
 
-        $questions = Question::where('area', '2')->where('tes_ke', '1')->get();
+        $questions = Question::where('area', '2')->where('tes_ke', '2')->get();
         
         $userTests = [];
         foreach ($questions as $question) {
@@ -80,7 +80,7 @@ class FirstTestController extends Controller
         $questions2 = Question::where(function ($query) {
                                 $query->where('area', '1')
                                         ->orWhere('area', '2');
-                                        })->where('tes_ke', '1')->get();
+                                        })->where('tes_ke', '2')->get();
 
         $userTests2 = [];
         foreach ($questions2 as $question) {
@@ -90,7 +90,7 @@ class FirstTestController extends Controller
             }
         }
 
-        return view('users.pages.first-test.area-2', compact('questions', 'userTests', 'userAuth', 'userTests2'));
+        return view('users.pages.last-test.area-2', compact('questions', 'userTests', 'userAuth', 'userTests2'));
     }
 
     public function store2(Request $request)
@@ -118,7 +118,7 @@ class FirstTestController extends Controller
     
             $test->save();
     
-            return redirect('/first-test/area-2');
+            return redirect('/last-test/area-2');
         } catch (\Exception $e) {
             DB::rollback();
             // dd($e->getMessage());
@@ -130,7 +130,7 @@ class FirstTestController extends Controller
     {
         $userAuth = Auth::user();
 
-        $questions = Question::where('area', '3')->where('tes_ke', '1')->get();
+        $questions = Question::where('area', '3')->where('tes_ke', '2')->get();
 
         $userTests = [];
         foreach ($questions as $question) {
@@ -144,7 +144,7 @@ class FirstTestController extends Controller
             $query->where('area', '1')
                     ->orWhere('area', '2')
                         ->orWhere('area', '3');
-                    })->where('tes_ke', '1')->get();
+                    })->where('tes_ke', '2')->get();
 
         $userTests3 = [];
         foreach ($questions3 as $question) {
@@ -154,7 +154,7 @@ class FirstTestController extends Controller
             }
         }
 
-        return view('users.pages.first-test.area-3', compact('questions', 'userTests', 'userAuth', 'userTests3'));
+        return view('users.pages.last-test.area-3', compact('questions', 'userTests', 'userAuth', 'userTests3'));
     }
 
     public function store3(Request $request)
@@ -182,7 +182,7 @@ class FirstTestController extends Controller
     
             $test->save();
     
-            return redirect('/first-test/area-3');
+            return redirect('/last-test/area-3');
         } catch (\Exception $e) {
             DB::rollback();
             // dd($e->getMessage());
@@ -200,7 +200,7 @@ class FirstTestController extends Controller
                 $query->where('area', '1')
                         ->orWhere('area', '2')
                             ->orWhere('area', '3');
-                        })->where('tes_ke', '1')->get();
+                        })->where('tes_ke', '2')->get();
     
             $userTests3 = [];
             $skorTotal = 0;
@@ -216,9 +216,9 @@ class FirstTestController extends Controller
             $score = new Score();
             $score->user_id = $userId ;
             $score->skor_total = $skorTotal;
-            $score->tes_ke = '1';
+            $score->tes_ke = '2';
 
-            $existingScore = Score::where('user_id', $userId)->where('tes_ke', '1')->latest()->first();
+            $existingScore = Score::where('user_id', $userId)->where('tes_ke', '2')->latest()->first();
 
             // Determine the value for sesi_ke
             $sesiKe = $existingScore ? $existingScore->sesi_ke + 1 : 1;
@@ -230,10 +230,10 @@ class FirstTestController extends Controller
             Test::where('user_id', $userId)->delete();
 
             if ($sesiKe == 2) {
-                User::where('id', $userId)->update(['first_test' => true]);
+                User::where('id', $userId)->update(['last_test' => true]);
             }
     
-            return redirect('/first-test/result');
+            return redirect('/last-test/result');
         } catch (\Exception $e) {
             DB::rollback();
             dd($e->getMessage());
@@ -249,6 +249,6 @@ class FirstTestController extends Controller
 
         $skorTotal = $skorId->skor_total;
 
-        return view('users.pages.first-test.result', compact('skorTotal'));
+        return view('users.pages.last-test.result', compact('skorTotal'));
     }
 }

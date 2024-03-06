@@ -333,25 +333,25 @@ class AnswerSeeder extends Seeder
         Answer::create([
             'question_id' => '26',
             'jawaban' => 'Ekspresionisme',
-            'benar' => 1,
+            'benar' => 0,
         ]);
         
         Answer::create([
             'question_id' => '26',
             'jawaban' => 'Surealisme',
-            'benar' => 0,
+            'benar' => 1,
         ]);
 
         Answer::create([
             'question_id' => '27',
             'jawaban' => 'Naturalisme',
-            'benar' => 1,
+            'benar' => 0,
         ]);
         
         Answer::create([
             'question_id' => '27',
             'jawaban' => 'Realisme',
-            'benar' => 0,
+            'benar' => 1,
         ]);
         
         Answer::create([
@@ -369,13 +369,13 @@ class AnswerSeeder extends Seeder
         Answer::create([
             'question_id' => '29',
             'jawaban' => 'Ekspresionisme',
-            'benar' => 0,
+            'benar' => 1,
         ]);
         
         Answer::create([
             'question_id' => '29',
             'jawaban' => 'Naturalisme',
-            'benar' => 1,
+            'benar' => 0,
         ]);
 
         Answer::create([

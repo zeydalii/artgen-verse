@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdminLoginController;
 use App\Http\Controllers\AdminRegisterController;
 use App\Http\Controllers\FirstTestController;
+use App\Http\Controllers\LastTestController;
 use App\Http\Controllers\ScoreController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserLoginController;
@@ -53,21 +54,20 @@ Route::get('/first-test/result', [FirstTestController::class, 'result'])->middle
 
 // LAST TEST
 
-Route::get('/last-test/area-1', function () {
-    return view('users.pages.last-test.area-1');
-});
+Route::get('/last-test/area-1', [LastTestController::class, 'area1'])->middleware(['userAuth', 'user']);
+Route::post('/last-test/area-1', [LastTestController::class, 'store1'])->middleware(['userAuth', 'user']);
 
-Route::get('/last-test/area-2', function () {
-    return view('users.pages.last-test.area-2');
-});
+Route::get('/last-test/area-2', [LastTestController::class, 'area2'])->middleware(['userAuth', 'user']);
+Route::post('/last-test/area-2', [LastTestController::class, 'store2'])->middleware(['userAuth', 'user']);
 
-Route::get('/last-test/area-3', function () {
-    return view('users.pages.last-test.area-3');
-});
+Route::get('/last-test/area-3', [LastTestController::class, 'area3'])->middleware(['userAuth', 'user']);
+Route::post('/last-test/area-3', [LastTestController::class, 'store3'])->middleware(['userAuth', 'user']);
 
-Route::get('/last-test/result', function () {
-    return view('users.pages.last-test.result');
-});
+Route::post('/last-test/submit', [LastTestController::class, 'testSubmit'])->middleware(['userAuth', 'user']);
+
+Route::get('/last-test/result', [LastTestController::class, 'result'])->middleware(['userAuth', 'user']);
+
+
 
 Route::get('/timeline', function () {
     return view('users.pages.timeline');
