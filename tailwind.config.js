@@ -44,7 +44,7 @@ export default {
       boxShadow: {
         navbar: "-4px 4px 5px rgba(118, 0, 0, 2)",
         navbarHover: "-4px 4px 5px rgba(151, 126, 43, 2)",
-        header: "0 20px 20px 20px rgba(118, 0, 0, 0.5)",
+        header: "0 20px 80px 20px rgba(118, 0, 0, 0.5)",
         aliran: "-4px 4px 5px rgba(0, 0, 0, 2)",
         button: "0 0 20px rgba(255, 0, 0, 0.5)",
         buttonSubmit: "0 0 20px rgba(255, 255, 255, 0.5)",

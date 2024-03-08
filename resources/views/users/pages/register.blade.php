@@ -13,7 +13,7 @@
   <div class="flex flex-col gap-y-10 justify-center items-center relative z-20">
     <div class="flex flex-col gap-y-3 justify-center items-center text-white">
       <h2 class="text-2xl phone:text-4xl font-extrabold">Registrasi Akun</h2>
-      <p class="text-xs phone:text-base font-bold">Isi identitas Artgen Peaple kamu di bawah ini ya!</p>
+      <p class="text-xs phone:text-base font-bold">Isi identitas Artgen People kamu di bawah ini ya!</p>
       @if (session()->has('registerSuccess'))
           <div class="bg-green-500 text-white py-2 px-4 rounded-md text-sm w-[250px] text-center font-bold">
               {{ session('registerSuccess') }}
@@ -56,7 +56,7 @@
         </div>
         <button type="submit" class="bg-bgNavbar px-12 py-3 rounded-full text-white mt-3 shadow-buttonSubmit">Daftar</button>
       </form>
-      <p class="font-bold">Sudah menjadi Artgen Peaple?</p>
+      <p class="font-bold">Sudah menjadi Artgen People?</p>
       <a href="/login" class="font-bold underline">Login disini!</a>
     </div>
   </div>

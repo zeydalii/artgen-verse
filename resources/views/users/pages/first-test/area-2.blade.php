@@ -12,12 +12,12 @@
   <div class="flex flex-col gap-y-10 justify-start items-center h-[calc(100vh-130px)] text-white font-bold w-full py-7 overflow-y-scroll relative z-20">
     <div class="flex flex-col justify-center items-center gap-y-3">
       <h2 class="text-xl">AREA 2</h2>
-      <p class="text-xs">DI AREA INI KALIAN HARUS MENEBAK SENIMAN</p>
-      <p class="text-xs">YANG MELUKIS KARYA YANG AKAN DITUNJUKKAN!</p>
+      <p class="text-phone phone:text-xs text-center">DI AREA INI KALIAN HARUS MENEBAK SENIMAN</p>
+      <p class="text-phone phone:text-xs text-center">YANG MELUKIS KARYA YANG AKAN DITUNJUKKAN!</p>
     </div>
 
     @foreach($questions as $question)
-      <form action="/first-test/area-2" method="POST">
+      <form id="{{ 'form-' . $question->id }}" action="/first-test/area-2" method="POST">
         @csrf
         <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
         <input type="hidden" name="question_id" value="{{ $question->id }}">

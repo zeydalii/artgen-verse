@@ -14,7 +14,7 @@
     <img src="{{ asset('assets/pecahan/logo-white.png') }}" alt="" class="w-28 phone:w-40" draggable="false">
     <div class="flex flex-col gap-y-3 justify-center items-center text-white">
       <h2 class="text-2xl phone:text-4xl font-extrabold">AREA TANTANGAN</h2>
-      <p class="text-xs phone:text-base font-bold">Isi identitas Artgen Peaple kamu di bawah ini ya!</p>
+      <p class="text-xs phone:text-base font-bold">Isi identitas Artgen People kamu di bawah ini ya!</p>
       @if (session()->has('loginError'))
           <div class="bg-red-500 text-white py-2 px-4 rounded-md text-sm w-[250px] text-center font-bold">
               {{ session('loginError') }}
@@ -36,7 +36,7 @@
         </div>
         <button type="submit" class="bg-bgNavbar px-12 py-3 rounded-full text-white mt-3 shadow-buttonSubmit">Sign In</button>
       </form>
-      <p class="font-bold">Belum menjadi Artgen Peaple?</p>
+      <p class="font-bold">Belum menjadi Artgen People?</p>
       <a href="/register" class="font-bold underline">Daftar disini!</a>
     </div>
   </div>

@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminLoginController;
 use App\Http\Controllers\AdminRegisterController;
 use App\Http\Controllers\FirstTestController;
 use App\Http\Controllers\LastTestController;
+use App\Http\Controllers\OverviewsController;
 use App\Http\Controllers\ScoreController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserLoginController;
@@ -119,9 +120,7 @@ Route::post('/admin/logout', [AdminLoginController::class, 'logout'])->middlewar
 Route::get('/admin/register', [AdminRegisterController::class, 'index'])->name('register-admin')->middleware('guest');
 Route::post('/admin/register', [AdminRegisterController::class, 'store'])->middleware('guest');
 
-Route::get('/admin', function () {
-    return view('admin.pages.overviews');
-})->middleware(['auth', 'admin']);
+Route::get('/admin', [OverviewsController::class, 'index'])->middleware(['auth', 'admin']);
 
 Route::get('/admin/admins', [AdminController::class, 'index'])->middleware(['auth', 'admin']);
 Route::post('/admin/admins', [AdminController::class, 'store'])->middleware(['auth', 'admin']);

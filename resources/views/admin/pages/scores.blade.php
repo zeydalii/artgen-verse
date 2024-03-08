@@ -10,9 +10,19 @@
         <h2 class="text-[35px] font-[500]">Daftar Skor</h2>
       </div>
       <div class="flex justify-end border-t border-gray-200 pt-3 pb-1">
-        <form action="/admin/scores" method="GET" class="flex items-center mb-[1px]">
-          <input type="text" name="search" autocomplete="off" placeholder="Search" class="focus:outline-none p-2 border border-gray-200 rounded-l-lg" value="{{ request('search') }}">
-          <button type="submit" class="px-2 py-2 rounded-r-lg border border-l-0 border-gray-200 hover:bg-gray-100 transition duration-300"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <form action="/admin/scores" method="GET" class="flex gap-x-2">
+          <div class="flex items-center mb-[1px]">
+            <input type="text" name="search" autocomplete="off" placeholder="Search" class="focus:outline-none p-2 border border-gray-200 rounded-l-lg" value="{{ request('search') }}">
+            <button type="submit" class="px-2 py-2 rounded-r-lg border border-l-0 border-gray-200 hover:bg-gray-100 transition duration-300"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+          <div class="flex items-center mb-[1px]">
+            <input type="text" name="tesSearch" autocomplete="off" placeholder="Tes ke" class="focus:outline-none p-2 border border-gray-200 rounded-l-lg w-[100px]" value="{{ request('tesSearch') }}">
+            <button type="submit" class="px-2 py-2 rounded-r-lg border border-l-0 border-gray-200 hover:bg-gray-100 transition duration-300"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+          <div class="flex items-center mb-[1px]">
+            <input type="text" name="sesiSearch" autocomplete="off" placeholder="Sesi ke" class="focus:outline-none p-2 border border-gray-200 rounded-l-lg w-[100px]" value="{{ request('sesiSearch') }}">
+            <button type="submit" class="px-2 py-2 rounded-r-lg border border-l-0 border-gray-200 hover:bg-gray-100 transition duration-300"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
         </form>
       </div>
     </div>
@@ -53,7 +63,7 @@
     </div>
 
     <div class="text-gray-600 dark:text-gray-400 bg-secondary-50 dark:bg-secondary-900">
-			{{ $scores->appends(['search' => $search])->links() }}
+			{{ $scores->appends(['search' => $search, 'tesSearch' => $tesSearch, 'sesiSearch' => $sesiSearch])->links() }}
 		</div>
   </div>
 </div>

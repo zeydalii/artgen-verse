@@ -55,7 +55,7 @@ class FirstTestController extends Controller
     
             $test->save();
     
-            return redirect('/first-test/area-1');
+            return redirect('/first-test/area-1#form-' . $questionId);
         } catch (\Exception $e) {
             DB::rollback();
             // dd($e->getMessage());
@@ -118,7 +118,7 @@ class FirstTestController extends Controller
     
             $test->save();
     
-            return redirect('/first-test/area-2');
+            return redirect('/first-test/area-2#form-' . $questionId);
         } catch (\Exception $e) {
             DB::rollback();
             // dd($e->getMessage());
@@ -182,7 +182,7 @@ class FirstTestController extends Controller
     
             $test->save();
     
-            return redirect('/first-test/area-3');
+            return redirect('/first-test/area-3#form-' . $questionId);
         } catch (\Exception $e) {
             DB::rollback();
             // dd($e->getMessage());

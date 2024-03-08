@@ -13,7 +13,7 @@
   <div class="flex flex-col gap-y-7 phone:gap-y-10 justify-center items-center z-20 fixed top-0 text-white font-bold bg-white/15 w-full py-7">
     <div class="flex flex-col justify-center items-center gap-y-2">
       <h2 class="text-xl phone:text-3xl">SELESAIKAN PETUALANGAN!</h2>
-      <p class="text-phone phone:text-xs">SETELAH MENGUMPULKAN BEKAL INFORMASI, AYO UJI INGATAN KALIAN!</p>
+      <p class="text-phone phone:text-xs text-center">SETELAH MENGUMPULKAN BEKAL INFORMASI, AYO UJI INGATAN KALIAN!</p>
     </div>
     <p class="text-sm phone:text-base tracking-[13px]">LET’S GO!</p>
   </div>
@@ -21,12 +21,12 @@
   <div class="flex flex-col gap-y-10 justify-start items-center h-[calc(100vh-300px)] mt-[150px] text-white font-bold w-full py-7 overflow-y-scroll relative z-20">
     <div class="flex flex-col justify-center items-center gap-y-3">
       <h2 class="text-xl">AREA 1</h2>
-      <p class="text-xs">DI AREA INI KALIAN HARUS MENEBAK ALIRAN SENI</p>
-      <p class="text-xs">YANG COCOK DENGAN LUKISAN YANG ADA!</p>
+      <p class="text-phone phone:text-xs text-center">DI AREA INI KALIAN HARUS MENEBAK ALIRAN SENI</p>
+      <p class="text-phone phone:text-xs text-center">YANG COCOK DENGAN LUKISAN YANG ADA!</p>
     </div>
 
     @foreach($questions as $question)
-      <form action="/last-test/area-1" method="POST">
+      <form id="{{ 'form-' . $question->id }}" action="/last-test/area-1" method="POST">
         @csrf
         <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
         <input type="hidden" name="question_id" value="{{ $question->id }}">

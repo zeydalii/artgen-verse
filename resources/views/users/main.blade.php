@@ -72,7 +72,7 @@
       <img src="{{ asset('assets/pecahan/vector1.png') }}" alt="" class="absolute -z-20 mt-3 phone:mt-7 phone:w-1/2">
       <img src="{{ asset('assets/pecahan/vector2.png') }}" alt="" class="absolute -z-10 phone:w-1/2">
     </div>
-    <ul id="fixedNavbar" class="text-white py-5 flex gap-x-1 phone:gap-x-3 justify-center font-montserrat font-bold">
+    <ul id="fixedNavbar" class="text-white py-3 phone:py-5 flex gap-x-1 phone:gap-x-3 justify-center font-montserrat font-bold bg-black/10">
       <li>
         <div class="relative z-20">
           <div>
@@ -944,11 +944,11 @@
 
     function handleScroll() {
       if (window.pageYOffset >= navbarOffset) {
-        navbar.classList.add("fixed", "top-0", "w-full", "z-20");
+        navbar.classList.add("fixed", "top-0", "w-full", "z-20", "backdrop-blur-md");
         background.classList.add("fixed", "top-0", "w-full", "-z-10");
         background.classList.remove("relative");
       } else {
-        navbar.classList.remove("fixed", "top-0", "w-full");
+        navbar.classList.remove("fixed", "top-0", "w-full", "backdrop-blur-md");
         background.classList.remove("fixed", "top-0", "w-full", "-z-10");
       }
     }

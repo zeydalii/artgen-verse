@@ -24,13 +24,12 @@
         @if (auth()->user()->first_test === 1 && auth()->user()->last_test === 0)
           <button class="bg-senimanBg px-16 py-2 rounded-2xl" onclick="location.href='/last-test/area-1'">Akhir <br> Petualangan</button>
         @else
-          <p class="bg-senimanBg/35 px-16 py-2 rounded-2xl flex justify-center items-center text-center">Petualang <br> Baru</p>
+          <p class="bg-senimanBg/35 px-16 py-2 rounded-2xl flex justify-center items-center text-center">Akhir <br> Petualangan</p>
         @endif
-        <button class="bg-senimanBg px-16 py-2 rounded-2xl">Rapot <br> Petualangan</button>
       </div>
       <form action="/logout" method="POST">
         @csrf
-        <button type="submit" class="font-bold underline mt-10">Logout</button>
+        <button type="submit" class="bg-bgNavbar px-12 py-3 rounded-full text-white mt-10 font-bold text-sm shadow-buttonSubmit">Logout</button>
       </form>
     </div>
   </div>
