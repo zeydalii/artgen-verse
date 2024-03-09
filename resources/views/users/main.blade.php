@@ -583,12 +583,12 @@
   <div id="bg-blur6" class="fixed hidden z-10 bg-black/45 top-0 right-0 left-0 bottom-0"></div>
   
   <div class="flex justify-center items-center mt-10 phone:mt-40">
-    <div class="w-full phone:w-1/2 flex justify-start">
-      <div class="w-5/12 phone:w-3/5 flex">
-        <img src="{{ asset('assets/karakter/neoklasik.png') }}" alt="" class="w-[550px] hidden phone:block cursor-pointer">
-        <img src="{{ asset('assets/karakter/neoklasik-m.png') }}" alt="" class="w-full phone:hidden">
+    <div class="w-full phone:w-1/2 flex justify-end relative">
+      <div class="absolute left-0 -z-[5]">
+        <img src="{{ asset('assets/karakter/neoklasik-char.png') }}" alt="" class="w-[600px] hidden phone:block">
+        <img src="{{ asset('assets/karakter/neoklasik-char-m.png') }}" alt="" class="w-[250px] phone:hidden">
       </div>
-      <div class="w-7/12 phone:w-2/5 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-montserrat">
+      <div class="w-1/2 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-montserrat pt-20">
         <h1 class="text-base phone:text-4xl text-neoklasik font-extrabold"><span class="text-3xl phone:text-8xl">N</span>EO KLASIK</h1>
         <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-sm hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 font-bold" onclick="location.href='/aliran/neoklasik'">JELAJAHI</button>
         <div class="flex gap-x-2 phone:gap-x-5 overflow-x-scroll  h-28 phone:h-44 mt-3">
@@ -601,9 +601,9 @@
     </div>
   </div>
   
-  <div class="flex justify-center items-center mt-10 phone:mt-40">
-    <div class="w-full phone:w-1/2 flex">
-      <div class="w-7/12 phone:w-2/5 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-end font-montserrat">
+  <div class="flex justify-center items-center mt-[200px] phone:mt-[400px]">
+    <div class="w-full phone:w-1/2 flex justify-start relative">
+      <div class="w-1/2 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-end font-montserrat pt-20">
         <h1 class="text-base phone:text-4xl text-bgNavbar font-extrabold"><span class="text-3xl phone:text-8xl">R</span>OMANTISME</h1>
         <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-sm hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 font-bold" onclick="location.href='/aliran/romantisme'">JELAJAHI</button>
         <div class="flex flex-row-reverse gap-x-2 phone:gap-x-5 overflow-x-scroll  h-28 phone:h-44 mt-3">
@@ -613,18 +613,19 @@
           <img src="{{ asset('assets/romantisme/romanticism_4.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
         </div>
       </div>
-      <div class="w-5/12 phone:w-3/5 flex justify-end">
-        <img src="{{ asset('assets/karakter/romantisme.png') }}" alt="" class="w-[400px]">
+      <div class="absolute right-0 -z-[5]">
+        <img src="{{ asset('assets/karakter/romantisme-char-rvs.png') }}" alt="" class="w-[550px] hidden phone:block">
+        <img src="{{ asset('assets/karakter/romantisme-char-rvs-m.png') }}" alt="" class="w-[250px] phone:hidden">
       </div>
     </div>
   </div>
   
-  <div class="flex justify-center items-center mt-10 phone:mt-40">
-    <div class="w-full phone:w-1/2 flex justify-start">
-      <div class="w-7/12 phone:w-3/5 flex">
-        <img src="{{ asset('assets/karakter/realisme.png') }}" alt="" class="w-[550px]">
+  <div class="flex justify-center items-center mt-[200px] phone:mt-[400px]">
+    <div class="w-full phone:w-1/2 flex justify-end relative">
+      <div class="absolute left-0 -z-[5]">
+        <img src="{{ asset('assets/karakter/realisme-char-rvs.png') }}" alt="" class="w-[300px] phone:w-[550px]">
       </div>
-      <div class="w-5/12 phone:w-2/5 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-montserrat">
+      <div class="w-1/2 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-montserrat pt-20">
         <h1 class="text-base phone:text-4xl text-realisme font-extrabold"><span class="text-3xl phone:text-8xl">R</span>EALISME</h1>
         <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-sm hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 font-bold" onclick="location.href='/aliran/realisme'">JELAJAHI</button>
         <div class="flex gap-x-2 phone:gap-x-5 overflow-x-scroll  h-28 phone:h-44 mt-3">
@@ -637,9 +638,9 @@
     </div>
   </div>
   
-  <div class="flex justify-center items-center mt-10 phone:mt-40">
-    <div class="w-full phone:w-1/2 flex">
-      <div class="w-7/12 phone:w-2/5 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-end font-montserrat">
+  <div class="flex justify-center items-center mt-[200px] phone:mt-[400px]">
+    <div class="w-full phone:w-1/2 flex justify-start relative">
+      <div class="w-1/2 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-end font-montserrat pt-20">
         <h1 class="text-base phone:text-4xl text-naturalisme font-extrabold"><span class="text-3xl phone:text-8xl">N</span>ATURALISME</h1>
         <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-sm hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 font-bold" onclick="location.href='/aliran/naturalisme'">JELAJAHI</button>
         <div class="flex flex-row-reverse gap-x-2 phone:gap-x-5 overflow-x-scroll  h-28 phone:h-44 mt-3">
@@ -650,18 +651,20 @@
           <img src="{{ asset('assets/naturalisme/naturalism_5.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
         </div>
       </div>
-      <div class="w-5/12 phone:w-3/5 flex justify-end">
-        <img src="{{ asset('assets/karakter/naturalis.png') }}" alt="" class="w-[450px]">
+      <div class="absolute right-0 -z-[5]">
+        <img src="{{ asset('assets/karakter/naturalis-char-rvs.png') }}" alt="" class="w-[600px] hidden phone:block">
+        <img src="{{ asset('assets/karakter/naturalis-char-rvs-m.png') }}" alt="" class="w-[250px] phone:hidden">
       </div>
     </div>
   </div>
   
-  <div class="flex justify-center items-center mt-10 phone:mt-40">
-    <div class="w-full phone:w-1/2 flex justify-start">
-      <div class="w-5/12 phone:w-6/12 flex">
-        <img src="{{ asset('assets/karakter/ekspresionisme.png') }}" alt="" class="w-[500px]">
+  <div class="flex justify-center items-center mt-[200px] phone:mt-[400px]">
+    <div class="w-full phone:w-1/2 flex justify-end relative">
+      <div class="absolute left-0 -z-[5]">
+        <img src="{{ asset('assets/karakter/ekspresionisme-char-rvs.png') }}" alt="" class="w-[550px] hidden phone:block">
+        <img src="{{ asset('assets/karakter/ekspresionisme-char-rvs-m.png') }}" alt="" class="w-[250px] phone:hidden">
       </div>
-      <div class="w-7/12 phone:w-6/12 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-montserrat">
+      <div class="w-1/2 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-montserrat pt-20">
         <h1 class="text-base phone:text-4xl text-ekspresionisme font-extrabold"><span class="text-3xl phone:text-8xl">E</span>KSPRESIONISME</h1>
         <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-sm hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 font-bold" onclick="location.href='/aliran/ekspresionisme'">JELAJAHI</button>
         <div class="flex gap-x-2 phone:gap-x-5 overflow-x-scroll  h-28 phone:h-44 mt-3">
@@ -674,9 +677,9 @@
     </div>
   </div>
   
-  <div class="flex justify-center items-center mt-10 phone:mt-40">
-    <div class="w-full phone:w-1/2 flex">
-      <div class="w-6/12 phone:w-2/5 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-end font-montserrat">
+  <div class="flex justify-center items-center mt-[200px] phone:mt-[400px]">
+    <div class="w-full phone:w-1/2 flex justify-start relative">
+      <div class="w-1/2 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-end font-montserrat pt-20">
         <h1 class="text-base phone:text-4xl text-impresionisme font-extrabold"><span class="text-3xl phone:text-8xl">I</span>MPRESIONISME</h1>
         <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-sm hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 font-bold" onclick="location.href='/aliran/impresionisme'">JELAJAHI</button>
         <div class="flex flex-row-reverse gap-x-2 phone:gap-x-5 overflow-x-scroll  h-28 phone:h-44 mt-3">
@@ -686,18 +689,20 @@
           <img src="{{ asset('assets/impresionisme/impressionism_4.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
         </div>
       </div>
-      <div class="w-6/12 phone:w-3/5 flex justify-end">
-        <img src="{{ asset('assets/karakter/impresionisme.png') }}" alt="" class="w-[450px]">
+      <div class="absolute right-0 -z-[5]">
+        <img src="{{ asset('assets/karakter/impresionisme-char.png') }}" alt="" class="w-[550px] hidden phone:block">
+        <img src="{{ asset('assets/karakter/impresionisme-char-m.png') }}" alt="" class="w-[250px] phone:hidden">
       </div>
     </div>
   </div>
   
-  <div class="flex justify-center items-center mt-10 phone:mt-40">
-    <div class="w-full phone:w-1/2 flex justify-start">
-      <div class="w-6/12 phone:w-7/12 flex">
-        <img src="{{ asset('assets/karakter/surealisme.png') }}" alt="" class="w-[550px]">
+  <div class="flex justify-center items-center mt-[200px] phone:mt-[400px]">
+    <div class="w-full phone:w-1/2 flex justify-end relative">
+      <div class="absolute left-0 -z-[5]">
+        <img src="{{ asset('assets/karakter/surealisme.png') }}" alt="" class="w-[550px] hidden phone:block">
+        <img src="{{ asset('assets/karakter/surealisme-rvs-m.png') }}" alt="" class="w-[250px] phone:hidden">
       </div>
-      <div class="w-6/12 phone:w-5/12 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-montserrat">
+      <div class="w-1/2 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-montserrat pt-20">
         <h1 class="text-base phone:text-4xl text-surealisme font-extrabold"><span class="text-3xl phone:text-8xl">S</span>UREALISME</h1>
         <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-sm hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 font-bold" onclick="location.href='/aliran/surealisme'">JELAJAHI</button>
         <div class="flex gap-x-2 phone:gap-x-5 overflow-x-scroll  h-28 phone:h-44 mt-3">
@@ -710,9 +715,9 @@
     </div>
   </div>
   
-  <div class="flex justify-center items-center mt-10 phone:mt-40">
-    <div class="w-full phone:w-1/2 flex">
-      <div class="w-7/12 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-end font-montserrat">
+  <div class="flex justify-center items-center mt-[200px] phone:mt-[400px]">
+    <div class="w-full phone:w-1/2 flex justify-start relative">
+      <div class="w-1/2 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-end font-montserrat pt-20">
         <h1 class="text-base phone:text-4xl text-kubisme font-extrabold"><span class="text-3xl phone:text-8xl">K</span>UBIS<span class="text-kubisme2">M</span>E</h1>
         <button class="px-4 py-2 phone:px-14 phone:py-5 shadow-navbar bg-bgNavbar rounded-full border-2 border-white border-opacity-35 text-white text-phone phone:text-sm hover:bg-navbarHover hover:shadow-navbarHover transition duration-300 font-bold" onclick="location.href='/aliran/kubisme'">JELAJAHI</button>
         <div class="flex flex-row-reverse gap-x-2 phone:gap-x-5 overflow-x-scroll  h-28 phone:h-44 mt-3">
@@ -723,18 +728,19 @@
           <img src="{{ asset('assets/kubisme/cubism_5.jpg') }}" alt="" class="rounded-xl w-64 h-full object-cover" draggable="false">
         </div>
       </div>
-      <div class="w-5/12 flex justify-end">
-        <img src="{{ asset('assets/karakter/kubisme.png') }}" alt="" class="w-[300px]">
+      <div class="absolute right-0 -z-[5]">
+        <img src="{{ asset('assets/karakter/kubisme-char.png') }}" alt="" class="w-[500px] hidden phone:block">
+        <img src="{{ asset('assets/karakter/kubisme-char-m.png') }}" alt="" class="w-[230px] phone:hidden">
       </div>
     </div>
   </div>
   
-  <div class="flex justify-center items-center mt-10 phone:mt-40 mb-40">
-    <div class="w-full phone:w-1/2 flex justify-start">
-      <div class="w-5/12 phone:w-7/12 flex">
-        <img src="{{ asset('assets/karakter/abstrak.png') }}" alt="" class="w-[500px]">
+  <div class="flex justify-center items-center mt-[200px] phone:mt-[400px] mb-[200px]">
+    <div class="w-full phone:w-1/2 flex justify-end relative">
+      <div class="absolute left-0 -z-[5]">
+        <img src="{{ asset('assets/karakter/abstrak.png') }}" alt="" class="w-[250px] phone:w-[500px]">
       </div>
-      <div class="w-7/12 phone:w-5/12 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-montserrat">
+      <div class="w-1/2 flex flex-col gap-y-3 phone:gap-y-7 justify-center items-start font-montserrat pt-20">
         <h1 class="text-base phone:text-4xl font-extrabold">
           <span class="text-3xl phone:text-8xl text-[#977E2B]">A</span><span class="text-[#F1802F]">B</span><span class="text-[#09001E]">S</span><span class="text-[#C9C9C8]">T</span><span class="text-[#79952C]">R</span><span class="text-[#666563]">A</span><span class="text-[#542C93]">K</span>
         </h1>

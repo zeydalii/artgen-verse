@@ -47,7 +47,7 @@
   <img src="{{ asset('assets/pecahan/traps33.png') }}" alt="" class="phone:hidden w-28 absolute right-0 bottom-80 -z-20" draggable="false">
   <img src="{{ asset('assets/pecahan/traps3.png') }}" alt="" class="hidden phone:block absolute right-0 bottom-0 -z-20" draggable="false">
   <img src="{{ asset('assets/pecahan/traps3.png') }}" alt="" class="phone:hidden w-40 absolute right-0 bottom-0 -z-20" draggable="false">
-  <img src="{{ asset('assets/karakter/neoklasik-m-rvs.png') }}" alt="" class="phone:hidden w-[220px] absolute right-0 bottom-0 -z-20" draggable="false">
+  <img src="{{ asset('assets/karakter/neoklasik-char-rvs-m.png') }}" alt="" class="phone:hidden w-[260px] absolute right-0 bottom-0 -z-20" draggable="false">
   
   <div class="h-[calc(100vh-128px)] w-full hidden phone:flex justify-between items-center">
     <div id="wheel-container" class="relative h-[750px] w-[750px] -left-[400px] rounded-full transform origin-center transition-transform ease-in-out duration-300">
@@ -65,7 +65,7 @@
       <img id="6-1" src="{{ asset('assets/pecahan/wheel6-red.png') }}" alt="" class="hidden w-[300px] absolute left-[60px] cursor-pointer scale-[1.15]" draggable="false">
     </div>
     <div>
-      <img src="{{ asset('assets/karakter/neoklasik-rvs.png') }}" alt="" class="w-[500px]">
+      <img src="{{ asset('assets/karakter/neoklasik-char-rvs.png') }}" alt="" class="w-[550px]">
     </div>
   </div>
   
